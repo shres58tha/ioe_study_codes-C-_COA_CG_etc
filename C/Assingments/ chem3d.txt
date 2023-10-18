@@ -1,0 +1,12 @@
+ 
+Generally, the basic electronic configuration of these elements is (n-1) d x  (n) s 2. This general plan is modified by the extra stability of half filled and full orbitals as indicated below in case of 3d series.
+Sc	Z = 21	      [Ar] 3d1 4s2
+Ti	Z = 22	      [Ar] 3d2 4s2
+V	Z = 23	      [Ar] 3d3 4s2
+Cr	Z = 24	      [Ar] 3d5 4s1
+Mn	Z = 25	      [Ar] 3d5 4s2
+Fe	Z = 26	      [Ar] 3d6 4s2
+Co	Z = 27	      [Ar] 3d7 4s2
+Ni	Z = 28	      [Ar] 3d8 4s2
+Cu	Z = 29	      [Ar] 3d10 4s1
+Zn	Z = 30	      [Ar] 3d10 4s2

@@ -1,0 +1,69 @@
+#define MAX_INPUT_LEN 80
+
+char inputbuf[MAX_INPUT_LEN];
+int input_pos = 0;
+//then, in your main loop
+
+int the_end = 0;
+do{
+   outtextxy (0,0, inputbuf);
+   c = getch();
+   switch (c){
+        case 8: // backspace
+          if (input_pos>0){
+             input_pos--;
+             inputbuf[input_pos] = 0;
+          }
+          break;
+        case 13: // return 
+          the_end = 1;
+          break;
+        case 27: // Escape = Abort 
+          inputbuf[0] = 0;
+          the_end = 1;
+          break;
+        default:
+          if (input_pos < MAX_INPUT_LEN-1 && c >= ' ' && c <= '~'){
+             inputbuf[input_pos] = c;
+             input_pos++;
+             inputbuf[input_pos] = 0;
+          }
+   }
+} while (!the_end);
+
+#include<stdio.h>
+#include<conio.h>
+#include<graphics .h>
+
+int main()
+{
+int num;
+int gd=DETECT, gm;
+initgraph(&gd,&gm," ");
+settextstyle(1,0,2);
+outtextxy(100,100,"Enter number here : ");
+scanf("%d",&num);
+outtextxy(100,200,"The number entered is : %d",num);
+getch();
+closegraph();
+}
+
+#include <stdio.h>
+
+struct a {
+   int i;
+};
+
+struct a f(struct a x)
+{
+   struct a r = x;
+   return r;
+}
+
+int main(void)
+{
+   struct a x = { 12 };
+   struct a y = f(x);
+   printf("%d\n", y.i);
+   return 0;
+}

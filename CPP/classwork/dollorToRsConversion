@@ -1,0 +1,46 @@
+/*
+ Dollar to Rs conversion  $1=120
+ */
+#include <iostream>
+using namespace std;
+class rupees;
+
+class dollar{
+    float dol;
+public:
+    dollar(float a=0.0):dol(a){}
+    void set(float d){ dol=d; }
+    float get(){ return dol;}
+};
+
+class rupees{
+    float rs;
+public:
+    rupees(float a=0.0):rs(a){}
+    rupees (dollar d ){  // parameterized conversion 
+        rs= d.get() * 120.0;
+    }
+    
+    void set(float r){ rs=r;}    
+    float get(){ return rs;}
+    
+    operator dollar(){  // conversion overloading
+        dollar d;
+        d.set(rs/120);
+        return (d);
+    }
+};
+    
+int main(){
+    float temp;
+    dollar d;
+    rupees r;
+    cout << "enter the dollar :" ; cin >> temp;
+    d.set(temp);
+    r=d;
+    cout << d.get()<<"$ ="<<r.get()<<"Rs"<<endl; 
+    cout << "enter the rupees :" ; cin >> temp;
+    r.set(temp);
+    d=r;
+    cout << r.get()<<"Rs ="<<d.get()<<"$"<<endl; 
+}

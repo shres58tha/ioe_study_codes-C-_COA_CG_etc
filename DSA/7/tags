@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Node	lablinkedList.c	/^}Node;$/;"	t	typeref:struct:node	file:
+begin_delete	singlyLinkedlList.c	/^void begin_delete();$/;"	p	file:
+data	lablinkedList.c	/^    int data;$/;"	m	struct:node	file:
+data	singlyLinkedlList.c	/^    int data;$/;"	m	struct:node	file:
+display	lablinkedList.c	/^void display() {$/;"	f
+display	lablinkedList.c	/^void display();$/;"	p	file:
+display	singlyLinkedlList.c	/^void display();$/;"	p	file:
+head	lablinkedList.c	/^Node *head=NULL;  \/\/by default it takes null ni$/;"	v
+head	singlyLinkedlList.c	/^struct node *head;$/;"	v	typeref:struct:node
+last_delete	singlyLinkedlList.c	/^void last_delete();$/;"	p	file:
+lastinsert	lablinkedList.c	/^void lastinsert ();$/;"	p	file:
+lastinsert	lablinkedList.c	/^void lastinsert() {$/;"	f
+lastinsert	singlyLinkedlList.c	/^void lastinsert ();$/;"	p	file:
+lastinsert	singlyLinkedlList.c	/^void lastinsert() {$/;"	f
+main	lablinkedList.c	/^int main () {$/;"	f
+main	singlyLinkedlList.c	/^int main () {$/;"	f
+next	lablinkedList.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
+next	singlyLinkedlList.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
+node	lablinkedList.c	/^typedef struct node$/;"	s	file:
+node	singlyLinkedlList.c	/^struct node$/;"	s	file:
+node::data	lablinkedList.c	/^    int data;$/;"	m	struct:node	file:
+node::data	singlyLinkedlList.c	/^    int data;$/;"	m	struct:node	file:
+node::next	lablinkedList.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
+node::next	singlyLinkedlList.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
+node_default	lablinkedList.c	/^Node node_default={0,NULL};$/;"	v
+random_delete	singlyLinkedlList.c	/^void random_delete();$/;"	p	file:
+randominsert	singlyLinkedlList.c	/^void randominsert() {$/;"	f
+randominsert	singlyLinkedlList.c	/^void randominsert();$/;"	p	file:
+search	lablinkedList.c	/^void search();$/;"	p	file:
+search	singlyLinkedlList.c	/^void search();$/;"	p	file:
+startinsert	lablinkedList.c	/^void startinsert ();$/;"	p	file:
+startinsert	lablinkedList.c	/^void startinsert() {$/;"	f
+startinsert	singlyLinkedlList.c	/^void startinsert ();$/;"	p	file:
+startinsert	singlyLinkedlList.c	/^void startinsert() {$/;"	f

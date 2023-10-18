@@ -1,0 +1,255 @@
+9.17   Workout Examples
+
+Example1: Write a program to overload the stream operator to read ans display the complex numbers [IOE TU] 
+//Stream_op_ovrld-cmplx_num.cpp
+//overloading stream operator to read and display complex numbers
+\include <iostream>
+using namespace std;
+class complex
+{
+    private:
+       float real,imag;
+    public:
+       Complex()
+       {
+           real=0,imag=0
+       }
+       friend istream &operator>>(istream &is,Complex &c);
+       friend ostream &operator<<(ostream &os,Complex &c);
+};
+istream &operator>>(istream &is,Complex &c)
+{
+     is>>c.real>>c.imag;
+     return is;
+}
+ostream &operator<<(ostream &os,Complex &c)
+{
+     if(c.imag<0)
+         os<<c.real<<"-i"<<-c.imag;
+     else
+         os<<c.real<<"+i"<<c.imag;
+     os<<flush;
+     return os;
+}
+
+int main()
+{
+     Complex c;
+     cout<<"Enter complex number: ";
+     cin>>c;
+     cont<<"You entered complex number: "<<c;
+     return o;
+}
+sample Run:
+Enter complex number:4-5
+You entered complex number:4-i5
+In the function main(),the statement
+     cin>>c;
+invokes overloaded function
+    ostream &operator<<(ostream &os,Complex &c)
+with first parameter as a reference to cin and second parameter as reference to object Complex c.The return value of this function is used as the operand of object cin.
+    Similarly ,the statement
+        cout<<"You entered complex: "<<c;
+invokes overloaded function
+    ostream &operator<<(ostream &os, Complex &t)
+with first parameter as a reference to cout and second parameter as a reference to the object of Complex c.
+    If the imaginary part of complex number is negative that is(c.imag<0)then following statement is executed
+            os<<c.real<<" -i"<<-c.imag;
+     but if imaginary part is positive,then following statement is executed
+             os<<c.real<<" + i"<<c.imag;
+
+
+
+Example 2:Write a program that reads the student information like name, adress, phone number etc and stores it in a file.The program should be able to add, show, edit or delete
+records from file.Use object oriented approach for programming.
+//add_delete__rec_in_file.cpp
+//program to add, edit and delete record in a file
+ include<iostream>
+ include<fsteam>
+ using namespace std;
+ const char* datafile"record.dat";
+ class student
+ {
+       private:
+            char name [25], add[25], phone[20];
+       public:
+           void read_data();
+           void show_data();
+           void write_rec();
+           void readone_rec();
+           void readall_rec();
+           void edit_rec();
+           void delete_rec();
+};
+void student : :read_data()
+{
+   cout<<"\nEnter name: ";
+   cin>>name;
+   cout<<"Enter adress: ";
+   cin>>add;
+   cout<<"Enter phone number:  ";
+   cin>>phone;
+   cout<<end1;
+}
+void student : :show_data()
+{
+   cout<<"Name: "<<name<<end1;
+   cout<<"Adress: "<<add<<end1;
+   cout<<"Phone number: "<<phone<<end1;
+   cout<<"------------------------------"<<end1;
+}
+void student: :write_rec()
+{
+    ofstream outfile(datafile,ios: :binary | ios: :app);
+    read_data();
+    outfile .write(reinterpret_cast<char*>(this)
+      ,sizeof(*this));
+}
+
+volid student: :readall_rec()
+{
+     ifstream infile(datfile,ios: :binary);
+     if(!infile)
+     {
+         cout<<"file not found: store record first"<<end1;
+         return;
+     }
+     cout<<"\n***Data from file**"<<end1;
+     while(!infile.eof())
+     {
+         if(infile.read(reinterpret_cast<char*>(this)
+          ,sizeof(*this))>0)
+         show_data();
+     }
+}
+volid student: :readone_rec()
+{
+     int n;
+     ifstream infile(datafile,ios: :binary);
+     if(!infile)
+     {
+         cout<<"file not found: store record first"<<end1;
+         return;
+     }
+     infile.seekg(0,ios: :end);
+     int count=infile.tellg()/sizeof(*this);
+     count<<"\nThere are "<<count<<" records in the file";
+     cout<<"\nEnter Record Number: ";
+     cin>>n;
+     infile.seekg((n-1)*sizeof(*this));
+     infile.read(reinterpret_cast<char*>(this),sizeof(*this);
+     show_data();
+}
+
+void student: :edit_rec()
+{
+    int n;
+    fstream iofile(datafile,ios: :in|ios: :binary);
+    if(!iofile)
+    {
+        cout<<"file not found: store record first"<<end1;
+        return;
+    }
+    iofile.seekg(0,ios: :end) ;
+    int count=iofile.tellg()/sizeof(*this);
+    cout<<"\nThere are "<<count<<"records in the file";
+    cout<<"\nEnter Record Number to be edited: ";
+    cin>>n;
+    iofile.seekg((n-1)*sizeof(*this);
+    iofile.read(reinterpret_cast<char*>(this),sizeof(*this)
+    cout<<"Record "<<n<<"has following data"<<end1;
+    show_data();
+    iofile.close();
+    iofile.open(datafile,ios: :out|ios: :out|ios: :binary);
+            //ios: :out alone caused file to be over written so
+            //ios: :in is used along with ios: :out
+    iofile.seekp((n-1)*sizeof(*this));
+    cout<<"Enter data to modify"<<end1;
+    read_data();
+    iofile.write(reinterpret_cast<char*>(this),sizeof(*this));
+}
+void student: :delete_rec()
+{
+int n;
+char tempfile{}="teno.dat";
+ifstream infile (datafile,ios::binary);
+if(;infile)
+{
+	count<<"file not found: store record first"<<ebd1;
+	retyrb;
+}
+infile.seekg (0,ios::end);
+int count=infile.tellg ()/sizeof(*this);
+
+cout<<"\nThere are "<<count<<"records in the file";
+cout<<"\nEnter Record Number to be deleted:";
+cin<<n;
+fstream tmpfile(tempfile,ios::outlios::binary);
+//ios;;out is used to create the file
+infile.seekg(0);
+for(int i=1;i<count;++i)
+{
+infile, read( reinterpret_cast<chat*<(this)
+,sizeof(*this);
+if(i==(n-1))
+	continue;
+temfile.write(reinterpret_cast<chat*<(this)
+,sizeof(*this);
+}
+infile.close();
+ofstream outfile (datafile,ios::binary);
+temfile.close();
+temfile.open(temfile,ios::in/ios::binary);
+for(int i=0;i<count-1;++i)
+{
+	temfile.read(reinterpret_cast<char*^(this)
+	,sizeof(*this);
+	outfile.write(reinterpret_cast<char*^(this)
+	,sizeof(*this);
+}
+temfile.close();
+remove (tempfile);
+}
+int main()
+{
+	student stu;
+	int choice;
+	cout<<"***student Record System***";
+	while (ture)
+{
+	cont<<'\nSelect one option below";
+	cout<<"\n\t1--^Write Records to file";
+	cout<<"\n\t2--^Show all Records From file";
+	cout<<"\n\t3--^Show One Recor";
+	cout<<"\n\t4--Edit a Record";
+	cout<<"\n\t5--^Delete a Record";
+	cout<<"\n\t6--^Exit from Program";
+	cout<<"\nEnter your choice:";
+	cin^^choice;
+	switch(choice)
+	{
+		case 1:
+			stu.write_rec();
+			break;
+		case 2:
+			stu.readall_rec();
+			break;
+		case 3:
+			stu.readone_rec();
+			break;
+		case 4:
+			stu.edit_rec();
+			break;
+		case 5:
+			stu.delete_rec();
+			break;
+		case 6:
+			exit(0);
+			break;
+		defalut:
+			cout<<"nChoice not available";
+			exit (0);
+	
+		
+
+     

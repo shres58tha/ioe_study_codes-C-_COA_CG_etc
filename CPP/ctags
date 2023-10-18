@@ -1,0 +1,124 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Employee	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^class Employee: public Human, public Work{  \/\/ inherit account  \/\/ inherit faculty.$/;"	c	file:
+Employee::index	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    int index=0;$/;"	m	class:Employee	file:
+Employee::nature	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    const std::string nature[4] ={ "NULL " , "full time ", "part time ", "temporary "} ;$/;"	m	class:Employee	file:
+Employee::set_type_	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    void set_type_(){$/;"	f	class:Employee
+Human	/home/shr/Desktop/cpract/CPP/project/human_.h	/^class Human{$/;"	c
+Human::address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::string address;$/;"	m	class:Human
+Human::contact_number	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::vector <unsigned long int> contact_number;$/;"	m	class:Human
+Human::email	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::vector <std::string> email;$/;"	m	class:Human
+Human::get_address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        string get_address        ( ) ;\/\/ $/;"	p	class:Human
+Human::get_name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        string get_name           ( ) ;\/\/ need to implement this get required for searching $/;"	p	class:Human
+Human::input_address	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_address ( ){ $/;"	f	class:Human
+Human::input_address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_address        ( ) ;        $/;"	p	class:Human
+Human::input_contact_number	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_contact_number( ) {$/;"	f	class:Human
+Human::input_contact_number	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_contact_number ( ) ;$/;"	p	class:Human
+Human::input_data	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_data ( ) {$/;"	f	class:Human
+Human::input_data	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_data           ( ) ;$/;"	p	class:Human
+Human::input_email	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_email ( ) { $/;"	f	class:Human
+Human::input_email	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_email          ( ) ; $/;"	p	class:Human
+Human::input_name	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_name ( ){ $/;"	f	class:Human
+Human::input_name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_name           ( ) ;        $/;"	p	class:Human
+Human::name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::string name;$/;"	m	class:Human
+Human::show_data	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::show_data ( ) {$/;"	f	class:Human
+Human::show_data	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void show_data            ( ) ;$/;"	p	class:Human
+MY_HUMAN_H	/home/shr/Desktop/cpract/CPP/project/human_.h	/^#define MY_HUMAN_H$/;"	d
+MY_INPUT_H	/home/shr/Desktop/cpract/CPP/project/input_.h	/^#define MY_INPUT_H$/;"	d
+MY_TIME_H	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^#define MY_TIME_H$/;"	d
+MY_WORK_H	/home/shr/Desktop/cpract/CPP/project/work_.h	/^#define MY_WORK_H$/;"	d
+Tempus	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^class Tempus{               \/\/ strictly public inheritance $/;"	c
+Tempus::current_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void current_date(){$/;"	f	class:Tempus
+Tempus::day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int day=0;$/;"	m	class:Tempus
+Tempus::days_in_month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int days_in_month(int y, int m){  \/\/ possible bug on irrelevant pass of data$/;"	f	class:Tempus
+Tempus::get_day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_day() { return day  ;}$/;"	f	class:Tempus
+Tempus::get_month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_month() { return month ;}$/;"	f	class:Tempus
+Tempus::get_weekday	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_weekday() { return weekday ;}$/;"	f	class:Tempus
+Tempus::get_year	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_year() { return year ;}$/;"	f	class:Tempus
+Tempus::month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int month=0;        \/\/ to indicate date invalid$/;"	m	class:Tempus
+Tempus::set_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void set_date(std::string str=""){$/;"	f	class:Tempus
+Tempus::show_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void show_date(std::string str=""){  \/\/ argument to print the passed header of the date;$/;"	f	class:Tempus
+Tempus::week_day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int week_day( int y, int m, int d){ \/\/ possible bug on irrelevant pass of data$/;"	f	class:Tempus
+Tempus::week_day_name	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        const std::string week_day_name[7] = {"sunday","monday","tuesday","wednesday","thursday","friday","saturday"};$/;"	m	class:Tempus
+Tempus::weekday	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int weekday; \/\/ 0 = sun 6 = sat$/;"	m	class:Tempus
+Tempus::year	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int year=0;$/;"	m	class:Tempus
+Work	/home/shr/Desktop/cpract/CPP/project/work_.h	/^class Work{                 \/\/ strictly public inheritance $/;"	c
+Work::current	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+Work::display_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void display_work_rec(std::string str=""){$/;"	f	class:Work
+Work::edit_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void edit_work_nature (){ input_work_nature();}  \/\/alias$/;"	f	class:Work
+Work::edit_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void edit_work_rec(){$/;"	f	class:Work
+Work::end	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+Work::get_recorded_y	/home/shr/Desktop/cpract/CPP/project/work_.h	/^int  get_recorded_y(){return recorded_y;}$/;"	f	class:Work
+Work::get_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^char get_work_nature(){return work_nature;}$/;"	f	class:Work
+Work::get_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^int  get_work_rec(){$/;"	f	class:Work
+Work::input_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void input_work_nature(){$/;"	f	class:Work
+Work::input_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void input_work_rec(std::string str="") {$/;"	f	class:Work
+Work::recorded_m	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    int recorded_m=0;$/;"	m	class:Work
+Work::recorded_y	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    int recorded_y=-1; \/\/ year in the record as y=0 is valid argument$/;"	m	class:Work
+Work::set_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void set_work_nature(char ch){s=ch;}$/;"	f	class:Work
+Work::start	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+Work::work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    char work_nature;     \/\/d=week_day h=hr  p=period  m=monthly$/;"	m	class:Work
+Work::work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    std::vector<std::vector<int> > work_rec; \/\/ for storing the work info for each month in int array [y][m]$/;"	m	class:Work
+address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::string address;$/;"	m	class:Human
+contact_number	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::vector <unsigned long int> contact_number;$/;"	m	class:Human
+current	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+current_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void current_date(){$/;"	f	class:Tempus
+day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int day=0;$/;"	m	class:Tempus
+days_in_month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int days_in_month(int y, int m){  \/\/ possible bug on irrelevant pass of data$/;"	f	class:Tempus
+display_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void display_work_rec(std::string str=""){$/;"	f	class:Work
+edit_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void edit_work_nature (){ input_work_nature();}  \/\/alias$/;"	f	class:Work
+edit_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void edit_work_rec(){$/;"	f	class:Work
+email	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::vector <std::string> email;$/;"	m	class:Human
+end	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+get_address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        string get_address        ( ) ;\/\/ $/;"	p	class:Human
+get_day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_day() { return day  ;}$/;"	f	class:Tempus
+get_month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_month() { return month ;}$/;"	f	class:Tempus
+get_name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        string get_name           ( ) ;\/\/ need to implement this get required for searching $/;"	p	class:Human
+get_recorded_y	/home/shr/Desktop/cpract/CPP/project/work_.h	/^int  get_recorded_y(){return recorded_y;}$/;"	f	class:Work
+get_weekday	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_weekday() { return weekday ;}$/;"	f	class:Tempus
+get_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^char get_work_nature(){return work_nature;}$/;"	f	class:Work
+get_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^int  get_work_rec(){$/;"	f	class:Work
+get_year	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_year() { return year ;}$/;"	f	class:Tempus
+index	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    int index=0;$/;"	m	class:Employee	file:
+input_	/home/shr/Desktop/cpract/CPP/project/input_.cpp	/^void input_( bool *p){   \/\/ template overloaded$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/input_.cpp	/^void input_( std::string str, std::string *p){  \/\/ input string to string pointer  \/\/ template overloaded$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/input_.h	/^void input_( bool *p);$/;"	p
+input_	/home/shr/Desktop/cpract/CPP/project/input_.h	/^void input_( std::string str, T *p){  \/\/ get input  with error checking$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/input_.h	/^void input_( std::string str, std::string *p);$/;"	p
+input_address	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_address ( ){ $/;"	f	class:Human
+input_address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_address        ( ) ;        $/;"	p	class:Human
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_contact_number( ) {$/;"	f	class:Human
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_contact_number ( ) ;$/;"	p	class:Human
+input_data	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_data ( ) {$/;"	f	class:Human
+input_data	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_data           ( ) ;$/;"	p	class:Human
+input_email	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_email ( ) { $/;"	f	class:Human
+input_email	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_email          ( ) ; $/;"	p	class:Human
+input_name	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_name ( ){ $/;"	f	class:Human
+input_name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_name           ( ) ;        $/;"	p	class:Human
+input_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void input_work_nature(){$/;"	f	class:Work
+input_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void input_work_rec(std::string str="") {$/;"	f	class:Work
+main	/home/shr/Desktop/cpract/CPP/project/check.cpp	/^int main() $/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^int main(){$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/worktime_.cpp	/^int main(){$/;"	f
+month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int month=0;        \/\/ to indicate date invalid$/;"	m	class:Tempus
+name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::string name;$/;"	m	class:Human
+nature	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    const std::string nature[4] ={ "NULL " , "full time ", "part time ", "temporary "} ;$/;"	m	class:Employee	file:
+recorded_m	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    int recorded_m=0;$/;"	m	class:Work
+recorded_y	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    int recorded_y=-1; \/\/ year in the record as y=0 is valid argument$/;"	m	class:Work
+set_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void set_date(std::string str=""){$/;"	f	class:Tempus
+set_type_	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    void set_type_(){$/;"	f	class:Employee
+set_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void set_work_nature(char ch){s=ch;}$/;"	f	class:Work
+show_data	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::show_data ( ) {$/;"	f	class:Human
+show_data	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void show_data            ( ) ;$/;"	p	class:Human
+show_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void show_date(std::string str=""){  \/\/ argument to print the passed header of the date;$/;"	f	class:Tempus
+start	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+week_day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int week_day( int y, int m, int d){ \/\/ possible bug on irrelevant pass of data$/;"	f	class:Tempus
+week_day_name	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        const std::string week_day_name[7] = {"sunday","monday","tuesday","wednesday","thursday","friday","saturday"};$/;"	m	class:Tempus
+weekday	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int weekday; \/\/ 0 = sun 6 = sat$/;"	m	class:Tempus
+work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    char work_nature;     \/\/d=week_day h=hr  p=period  m=monthly$/;"	m	class:Work
+work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    std::vector<std::vector<int> > work_rec; \/\/ for storing the work info for each month in int array [y][m]$/;"	m	class:Work
+year	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int year=0;$/;"	m	class:Tempus

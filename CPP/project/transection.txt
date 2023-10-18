@@ -1,0 +1,1 @@
+duplicate all the monetary transaction here with the current time stamps  

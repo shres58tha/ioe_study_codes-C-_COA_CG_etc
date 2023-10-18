@@ -1,0 +1,31 @@
+ 
+
+Your struct doesn't contain an object, but rather, a function that returns one:
+
+struct Mystruct{
+   myObj obj();  // this is a function declaration
+   int a;
+};
+It sounds like you meant
+
+struct Mystruct{
+   myObj obj;
+   int a;
+};
+Then you can say
+
+Mystruct foo; // default constructs obj: myObj must be default constructable
+foo.a = 5;
+foo.obj = myObj("test",3);
+or
+
+Mystruct foo = {myObj("test",3), 5};
+Note the absence of pointers and dynamic allocation: you should only use those if you really need to, and if you know what you are doing.
+
+For completeness, your attempt at pointers fails, because when you declare this pointer:
+
+struct Mystruct* foo;
+it doesn't point to anything useful (actually, it holds a memory address which you can consider to be random and points to somewhere you shouldn't be writing). So you cannot do this:
+
+foo->a = 42; // Ooops, foo doesn't point to a MyStruct object yet.
+You need to make foo point to a MyStruct object before using it in this way.

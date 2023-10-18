@@ -1,0 +1,215 @@
+Notes on streams and file access
+Home: https://staffwww.fullcoll.edu/aclifton/courses/cs123s/stream-notes.html
+How do we access files in C++? That is, how do we write a program that either reads in the contents of a file and does something with it, or else writes out information to a file (or maybe both)? In C++, this is easy, thanks to something called iostreams.
+
+The basic idea behind iostreams is that writing to a file is a lot like writing to the screen, and similarly, reading from a file is a lot like reading from the keyboard. In fact, a lot of things are “like” that, so the C++ committee came up with ostreams and istreams. An ostream is anything that you can write to; the “o” stands for “out”. An istream is anything that you can read from: the “i” stands for “in”. You’ve seen two already:
+
+cout is an ostream
+
+cin is an istream
+
+Files can be ostreams, istreams, or both, depending on how you access them. If you have an istream-like file, you can only read from it; an ostream-like file can only be written to. An iostream file can be read and written to, you can even write something out and then read it back in!
+
+The standard stream hierarchy
+Just as exceptions are grouped into a hierarchy, so are streams. For example, some streams (like cout) can only be written to, some (like cin) can only be read from, and some can do both. Some streams support seeking, moving around in the stream to read things you’ve already read (files support this, cin does not). The standard stream hierarchy encodes these different abilities.
+
+Inheritance
+Both the exception hierarchy and the stream hierarchy are built using inheritance. This is a way to “borrow” parts of one class when building another class. For example, the exception class logic_error “borrows” .what() from it’s parent class, exception. Just remember that when we say “class X inherits from Y” (or “X is a subclass of Y) this means that anything Y can do, X can also do.
+
+ios (from ios_base)
+|
++----- istream (cin)
+|         +-------------- ifstream
+|         +-------------- istringstream
+|
++----- ostream (cout)
+          +-------------- ofstream
+          +-------------- ostringstream
+
+   istream               ostream
+      |                     |
+      +----------+----------+
+                 |
+             iostream
+                 |
+              fstream  
+                 |
+            stringstream
+The stream hierarchy
+At the root of the stream is the class ios (defined in header <ios>). You never really use this class by itself, as it exists only to specify what kinds of things all streams can do. Every stream class inherits from ios, so if you look at what ios can do, you know that any stream can do those things also.
+
+Stream state: .rdstate(), .setstate() and .clear() (along with shortcut methods .good(), .bad(), .fail() and .eof()) all give us information about the state of the stream. For example, for cin cin.eof() is true if the user has pressed Ctrl-D. EOF stands for "End of File”, but more generally it means end of stream, no more data is coming.
+The state flags for a stream tell us what state it is in: is everything OK? Have we reached the end of the stream? Has some kind of error occured? The state flags are
+
+.good() – If this is true, then everything is OK with the stream.
+
+.eof() – If this is true, then we have reached the end of the stream, and trying to read from it will fail. This is true of cin after the user presses Ctrl-D, but it is also true for files if we read all the way to the end of the file, or for network streams if the network interface is closed.
+
+.fail() – If this is true, then the last attempt to accessed the stream failed. This could be because the stream was already EOF, or for some other reason. Failure is not a permanent error: in some cases its possible to reset the stream and keep using it. (When we write something like while(cin >> i) what we are actually doing is while(!cin.fail()).)
+
+.bad() – If this is true, then the stream has gone bad. This means not only will attempts to access it fail, but it’s not possible to get it working again.
+
+.clear() – Clears all the bad/EOF/fail state flags. This tries to reset the stream to a state where you can use it again; whether this succeeds depends on whether the stream was just temporarily broken or has actually stopped working completely. E.g., doing cin.clear() after the user has pressed Ctrl-D won’t help, because the stream really has ended. On a file, however, where we can go back and read things we’ve seen before, it will work.
+
+Note that .eof(), .fail(), and .bad() are only set after you try to access a stream. The only way to detect whether something has gone wrong with a stream is to try to use it.
+
+It’s also possible to tell a stream to throw an exception when it goes into fail, bad or eof. Normally the stream state is set “silently” and you have to check it yourself. For example, if we want eof to throw an exception:
+
+cin.exceptions(istream::eofbit);
+Those are the things that all streams support, input, output, file, whatever. Keep them in mind as we talk about other kinds of streams. If you want to turn off all exceptions later, just do .exceptions(0).
+
+Streams for input and output
+Next up in the hierarchy are istream and ostream (defined in headers <istream> and <ostream>, respectively), more abstract classes that add things specific for input and output.
+
+In particular, istream adds >> (the extraction operator) and .get, our two old friends, but it also adds some other things we haven’t talked about:
+
+.ignore(n) – Reads and ignores n characters from the input. You can use this if you want to skip over some characters. for example, suppose you want the user to enter coordinates in the form (x,y). We need to skip over the (, the comma in the middle, and the closing ). We can do this with
+
+ int x,y;
+ cin.ignore(1); // Ignore (
+ cin >> x;
+ cin.ignore(1); // Ignore ,
+ cin >> y;
+ cin.ignore(1); // Ignore )
+If you want, you can tell .ignore to stop ignoring if it sees some particular character:
+
+ cin.ignore(10,'!');
+will ignore at most 10 characters, unless it sees a ! first, in which case it will stop early.
+
+.peek() tells you what the next character in the stream is without actually reading it. That is, if you do
+
+ char c1 = char(cin.peek()); 
+ char c2;
+ cin.get(c2); 
+ c1 == c2; // This will always be true, unless the stream is EOF
+This can be useful for checking to make sure the input has the format you are expected. To expand on our coordinate-reading above, if the user’s input does not have the required (,) then ignoring will mess things up, so we can require them:
+
+ int x,y;
+ while(true) {
+   cout << "Enter a coordinate (x,y): ";
+   if(cin.peek() != '(')
+     continue; 
+   cin.ignore(1);
+   cin >> x;
+
+   if(cin.peek() != ',')
+     continue;
+
+   cin.ignore(1);
+   cin >> y;
+
+   if(cin.peek() != ')')
+     continue;
+   else
+     break;
+ }
+.tellg() returns the stream position within the stream. This doesn’t make sense for cin, but for files it returns how far you are from the beginning of the file (i.e., how many characters).
+
+(The g stands for “get”.)
+
+.seekg(p) sets the stream position to p, if possible. This doesn’t work on cin (obviously), but for files it “seeks” to the desired position. Note that if the stream is eof, this will have no effect until the state is clear()d!
+
+ s.clear();
+ s.seekg(100);
+If you try to seek past the end of the stream, it will set fail on the stream.
+
+While the default form of seek takes you to an absolute position, specified by number of characters from the beginning, there is another form that lets you move forward or backward a certain number of characters:
+
+ s.seekg(10, ios_base::cur); // Move 10 chars forward
+ s.seekg(-5, ios_base::cur); // Move 10 chars backwards
+.sync() – I’ve mentioned this before, but .sync synchronizes the stream with whatever is on the other end of it. Unfortunately, this may or may not do anything: what it does is left to the C++ system you are using.
+
+Although getline is technically part of <string>, it will work with any istream including file streams and stringstreams.
+
+ostream gives us << which we are familiar with from cout, but also a few other things (which cout has but we haven’t talked about):
+
+.put(c) – The output counterpart to .get(), this writes a single character to a stream, without doing any of the fancy formatting that << might do.
+
+.tellp() – Returns the current stream position within the stream. For cout this is meaningless but for a file it gives you your position within the file, with 0 at the beginning.
+
+(The p stands for “put”.)
+
+.seekp(p) – Sets the current stream position. This works like seekg for input streams, setting the position. Again, does nothing for cout, but for files it allows you to move around within the file. As with seekg, has no effect if .eof() is set, and there is a two-parameter form that allows you to move relative to the current position.
+
+.flush() – The output-equivalent to .sync, this forces whatever is on the other end of the stream to be synchronized with it. In practice, this means that if there’s anything written to the stream that has not yet been written to the screen/file/whatever, then it gets written immediately (some streams are buffered, delaying writing things until they have a certain amount of characters saved up). For example, if you print something to cout that doesn’t end with endl:
+
+ cout << "Hello";
+it won’t appear until you do print an endl. To force it to print anyway, just flush afterward:
+
+ cout << "Hello";
+ cout.flush();
+iostream
+iostream is an (abstract) class for streams that support both input and output. Hence, it inherites from both istream and ostream, and supports everything that they can both do. All of the specific types of streams we’re going to talk about come in three variants:
+
+Input-only – inherits from istream, name starts with an i
+
+Output-only – inherits from ostream, name starts with an o
+
+Input and output – inherits from iostream
+
+Note that iostream doesn’t add anything new of its own: there are no operations that are specific to streams that support both input and output, there are only input-specific operations and output-specific operations.
+
+Note that input/output streams actually have both an input position (accessed through seekg/tellg) and an output position (seekp/tellp) which are independent of each other. This means that in a file (for example) you can be reading in one location, and writing in another.
+
+File streams
+The file stream types are ifstream (input), ofstream (output) and fstream (input/output), all defined in header <fstream>. Everything we said about about input/output operations applies to these; the only things new are things specific to files: how do we open a file given its name, how do we close a file, etc.
+
+Opening a file stream
+The easiest way to open a file stream is when we create it:
+
+#include<fstream>
+
+fstream file("myfile.txt"); // Opens myfile.txt for input/output
+After doing this, we can use all our familiar stream operations (in particular, << and >> on file, just like with cin and cout):
+
+string first_line;
+getline(file, first_line); // Get the first line of the file
+
+file << "Hello"; // Write some text into the file
+We can also open a file, after we create the stream:
+
+fstream file();
+
+file.open("myfile.txt"); // Same as above
+When you’re done with a file it’s polite to close it:
+
+file.close();
+The default way to open a file is for both reading and writing, and with the starting stream position at the beginning of the file. Furthermore, if we open the file for writing and the file already exists, then its existing contents will be left unchanged. We can specify a number of flags when opening a file that change these defaults:
+
+// Open for input, but starting at the end
+fstream file("myfile.txt", ios_base::in | ios_base::ate);
+
+// Open for output, starting at the end (append)
+fstream file2();
+file2.open("stuff.txt", ios_base::out | ios_base::app);
+This opens the file for input only, and starts the stream position at the end of the file. The full list of flags is
+
+ios_base::in – Open for input. Note that the file must already exist if you open for in, unless you also add trunc (see below).
+
+ios_base::out – Open for output. The file may or may not already exist; it will be created if it does not exist (unless you open it for both in and out).
+
+ios_base::ate – Start the stream position at the end, rather than the beginning, of the file.
+
+ios_base::app – Only allow writing to the end of the file. This effectively forbids the use of tellp to set the output position, so all writes to the file are appended to the end of it.
+
+ios_base::trunc – If the file already exists, then erase everything in the file and start at the beginning (this trunc-ates the file). This requires ios_base::out. If the file does not exist, this will force its creation.
+
+ios_base::binary – Opens the file in binary mode instead of text mode. In binary mode, only .get() and .put() are really safe to use, and they will do no filtering on the contents of the file at all (i.e., .get() will read in characters that it otherwise would not).
+
+(You can think of the difference between ate and app is that ate moves the stream position to the end of the file when it is first opened, while app moves the stream position to the end of the file after every write.)
+
+Note that while the default is both in and out, if you give any of these flags the defaults will not be added to them. A common mistake is to write:
+
+fstream file("myfile.txt", ios_base::trunc);
+intended to truncate the file and open it for writing. However, this does not specify in or out, and hence the file that is opened is actually not able to be read from or written to at all! You have to do
+
+fstream file("myfile.txt", ios_base::trunc | ios_base::out);
+Note that because the default is both in and out, if you try to open a file that is read-only for your user (cannot be written to), it will fail (set the fail bit permanently) unless you either
+
+Open the file for in only:
+
+ fstream myfile("read-only-file.txt", ios_base::in);
+Open the file as an ifstream:
+
+ ifstream myfile("read-only-file.txt");
+ifstreams are always only in.

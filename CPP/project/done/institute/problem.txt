@@ -1,0 +1,5 @@
+the problem remianing here is how to seperate the code for the template from the header file
+input_.h is included in all the .cpp file causing big trouble for making all work.
+
+solution here is to  chain all in to one by the word processpr.
+that is no cpp files seperated form the header file actually they are exactly same

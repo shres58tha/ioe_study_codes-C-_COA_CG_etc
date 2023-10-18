@@ -1,0 +1,32 @@
+//prime no generating prime program
+#include <stdio.h>
+#include <math.h>
+
+
+int main() {
+    int low, high, i, flag, temp;
+    printf("Enter two numbers(intervals): ");
+    scanf("%d %d", &low, &high);
+    // swap numbers if low is greather than high
+    if (low > high) {
+        temp = low;
+        low = high;
+        high = temp;
+    }
+    printf("Prime numbers between %d and %d are: ", low, high);
+    while (low < high) {  // check the no for divisibilty from all the numbers from 1 to low and set flag if it is divisible
+        flag = 0;
+        for (i = 2; i <= low / 2; ++i) {
+            if (low % i == 0) {
+                flag = 1;
+                break;
+            }
+        }
+        if (flag == 0)
+            printf("%d ", low);
+        ++low;
+	//pow(2,2);
+    }
+    printf("\n");
+    return 0;
+}

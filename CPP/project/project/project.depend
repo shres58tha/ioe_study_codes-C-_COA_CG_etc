@@ -1,0 +1,237 @@
+# depslib dependency file v1.0
+1605455015 source:/home/shr/Desktop/cpract/CPP/project/project/main.cpp
+	<iostream>
+	"input_.h"
+	"tempus_.h"
+	"institute_.h"
+	"work_.h"
+	"human_.h"
+	"employee.cpp"
+	"worktime_.cpp"
+
+1605413448 source:/home/shr/Desktop/cpract/CPP/project/employee.cpp
+	<iostream>
+	<string>
+	"human_.h"
+	"work_.h"
+	"input_.h"
+
+1605452496 /home/shr/Desktop/cpract/CPP/project/human_.h
+	"input_.h"
+	<string>
+	<iomanip>
+	<vector>
+
+1605452454 /home/shr/Desktop/cpract/CPP/project/input_.h
+	<iostream>
+	<string>
+	<iomanip>
+
+1603873568 /home/shr/Desktop/cpract/CPP/project/input_.cpp
+	"input_.h"
+
+1605412615 /home/shr/Desktop/cpract/CPP/project/human_.cpp
+	"human_.h"
+
+1605452083 /home/shr/Desktop/cpract/CPP/project/work_.h
+	<iostream>
+	<string>
+	"input_.h"
+	"tempus_.h"
+	<ctime>
+	<vector>
+
+1605412926 /home/shr/Desktop/cpract/CPP/project/tempus_.h
+	<iostream>
+	<string>
+	<iomanip>
+	"input_.h"
+	<ctime>
+
+1603873568 source:/home/shr/Desktop/cpract/CPP/project/input_.cpp
+	"input_.h"
+
+1605412615 source:/home/shr/Desktop/cpract/CPP/project/human_.cpp
+	"human_.h"
+
+1605452529 source:/home/shr/Desktop/cpract/CPP/project/faculty_.cpp
+	"faculty_.h"
+
+1605452540 /home/shr/Desktop/cpract/CPP/project/faculty_.h
+	"input_.h"
+	<string>
+	<iomanip>
+	<vector>
+
+1604043138 source:/home/shr/Desktop/cpract/CPP/project/worktime_.cpp
+	"work_.h"
+	"tempus_.h"
+	"input_.h"
+
+1605452575 source:/home/shr/Desktop/cpract/CPP/project/institute_.cpp
+	"institute_.h"
+
+1605452604 /home/shr/Desktop/cpract/CPP/project/institute_.h
+	"input_.h"
+	<string>
+	<iomanip>
+	<vector>
+
+1605453594 source:/home/shr/Desktop/cpract/CPP/project/project/employee.cpp
+	<iostream>
+	<string>
+	"human_.h"
+	"work_.h"
+	"input_.h"
+
+1605452496 /home/shr/Desktop/cpract/CPP/project/project/human_.h
+	"input_.h"
+	<string>
+	<iomanip>
+	<vector>
+
+1605452454 /home/shr/Desktop/cpract/CPP/project/project/input_.h
+	<iostream>
+	<string>
+	<iomanip>
+
+1605508183 /home/shr/Desktop/cpract/CPP/project/project/work_.h
+	<iostream>
+	<string>
+	"input_.h"
+	"tempus_.h"
+	<ctime>
+	<vector>
+
+1605508370 /home/shr/Desktop/cpract/CPP/project/project/tempus_.h
+	<iostream>
+	<string>
+	<iomanip>
+	"input_.h"
+	<ctime>
+
+1605452529 source:/home/shr/Desktop/cpract/CPP/project/project/faculty_.cpp
+	"faculty_.h"
+
+1605452540 /home/shr/Desktop/cpract/CPP/project/project/faculty_.h
+	"input_.h"
+	<string>
+	<iomanip>
+	<vector>
+
+1605412615 source:/home/shr/Desktop/cpract/CPP/project/project/human_.cpp
+	"human_.h"
+
+1603873568 source:/home/shr/Desktop/cpract/CPP/project/project/input_.cpp
+	"input_.h"
+
+1605452575 source:/home/shr/Desktop/cpract/CPP/project/project/institute_.cpp
+	"institute_.h"
+
+1605452604 /home/shr/Desktop/cpract/CPP/project/project/institute_.h
+	"input_.h"
+	<string>
+	<iomanip>
+	<vector>
+
+1605452747 source:/home/shr/Desktop/cpract/CPP/project/project/worktime_.cpp
+	"work_.h"
+	"tempus_.h"
+	"input_.h"
+
+1605453594 /home/shr/Desktop/cpract/CPP/project/project/employee.cpp
+	<iostream>
+	<string>
+	"human_.h"
+	"work_.h"
+	"input_.h"
+
+1605452747 /home/shr/Desktop/cpract/CPP/project/project/worktime_.cpp
+	"work_.h"
+	"tempus_.h"
+	"input_.h"
+
+1605453594 source:/home/shr/Desktop/code/CPP/project/project/employee.cpp
+	<iostream>
+	<string>
+	"human_.h"
+	"work_.h"
+	"input_.h"
+
+1605452496 /home/shr/Desktop/code/CPP/project/project/human_.h
+	"input_.h"
+	<string>
+	<iomanip>
+	<vector>
+
+1605452454 /home/shr/Desktop/code/CPP/project/project/input_.h
+	<iostream>
+	<string>
+	<iomanip>
+
+1605943336 /home/shr/Desktop/code/CPP/project/project/work_.h
+	<iostream>
+	<string>
+	"input_.h"
+	"tempus_.h"
+	<ctime>
+	<vector>
+
+1605508370 /home/shr/Desktop/code/CPP/project/project/tempus_.h
+	<iostream>
+	<string>
+	<iomanip>
+	"input_.h"
+	<ctime>
+
+1605452529 source:/home/shr/Desktop/code/CPP/project/project/faculty_.cpp
+	"faculty_.h"
+
+1605452540 /home/shr/Desktop/code/CPP/project/project/faculty_.h
+	"input_.h"
+	<string>
+	<iomanip>
+	<vector>
+
+1605412615 source:/home/shr/Desktop/code/CPP/project/project/human_.cpp
+	"human_.h"
+
+1603873568 source:/home/shr/Desktop/code/CPP/project/project/input_.cpp
+	"input_.h"
+
+1605452575 source:/home/shr/Desktop/code/CPP/project/project/institute_.cpp
+	"institute_.h"
+
+1605452604 /home/shr/Desktop/code/CPP/project/project/institute_.h
+	"input_.h"
+	<string>
+	<iomanip>
+	<vector>
+
+1605591871 source:/home/shr/Desktop/code/CPP/project/project/main.cpp
+	<iostream>
+	"input_.h"
+	"tempus_.h"
+	"institute_.h"
+	"work_.h"
+	"human_.h"
+	"employee.cpp"
+	"worktime_.cpp"
+
+1605453594 /home/shr/Desktop/code/CPP/project/project/employee.cpp
+	<iostream>
+	<string>
+	"human_.h"
+	"work_.h"
+	"input_.h"
+
+1605452747 /home/shr/Desktop/code/CPP/project/project/worktime_.cpp
+	"work_.h"
+	"tempus_.h"
+	"input_.h"
+
+1605452747 source:/home/shr/Desktop/code/CPP/project/project/worktime_.cpp
+	"work_.h"
+	"tempus_.h"
+	"input_.h"
+

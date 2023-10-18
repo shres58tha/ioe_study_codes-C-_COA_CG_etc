@@ -1,0 +1,12 @@
+MM	https://meet.google.com/lookup/ ?authuser=1&hs=179
+NPA	https://meet.google.com/lookup/ ?authuser=1&hs=179
+SG	https://meet.google.com/lookup/ ?authuser=1&hs=179
+GDC	https://meet.google.com/lookup/ ?authuser=1&hs=179
+JG	https://meet.google.com/lookup/ ?authuser=1&hs=179
+SKR	https://meet.google.com/lookup/ ?authuser=1&hs=179
+AKR	https://meet.google.com/lookup/ ?authuser=1&hs=179
+PCR	https://meet.google.com/lookup/ ?authuser=1&hs=179
+LKC	https://meet.google.com/lookup/ ?authuser=1&hs=179
+RS	https://meet.google.com/lookup/ ?authuser=1&hs=179
+SS	https://meet.google.com/lookup/ ?authuser=1&hs=179
+GBJ	https://meet.google.com/lookup/ ?authuser=1&hs=179

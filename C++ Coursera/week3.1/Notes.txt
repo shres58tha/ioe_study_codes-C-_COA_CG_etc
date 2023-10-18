@@ -1,0 +1,14 @@
+The code for this assignment is found in 10 files:
+Main.cpp, Graph.cpp, PriorityQueue.cpp, ShortestPathAlgorithm.cpp
+Edge.h, Graph.h, Helper.h, PriorityQueue.h, QueueElement.h, ShortestPathAlgorithm.h
+
+Running the program it produces a text output with the calculation of the average shortest path 
+for two randomly generated graphs of 50 nodes and different densities (20% and 40%).
+For each class and each function there is a commented description inside the source files.
+
+A sample output for a single run is the following:
+
+Results:
+========
+Average Shortest Path Length for 20% density is: 6.34728
+Average Shortest Path Length for 40% density is: 4.37255

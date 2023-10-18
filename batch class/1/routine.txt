@@ -1,0 +1,8 @@
+-ClassTimeTable-
+Sun	|7:00|EM-MM   	|8:40|Math-GDC	|1020|Break 	|1250|Inst-LKC	|1430|NULL
+Mon	|7:00|CS-SKR  	|8:40|PS-JG   	|1020|NULL
+Tue	|7:00|EM-MM   	|8:40|Math-NPA	|1020|Break 	|1200|EDC-PCR 	|1340|Inst-LKC|1520|NULL
+Wed	|7:00|MAth-SA 	|8:40|CS-SKR  	|1020|Break 	|1200|EDC-AKR 	|1340|NULL
+Thu	|7:00|EM-MM   	|8:40|PS-SS   	|1020|Break 	|1200|EDC-AKR 	|1340|NULL
+Fri	|7:00|Math-GBJ	|7:50|Break   	|840 |CS-SKR	|1020|Break   	|1200|Inst-RS |1340|NULL
+

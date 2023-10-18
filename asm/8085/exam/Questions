@@ -1,0 +1,36 @@
+questions
+
+1. 15 bytes of data are stored in memory location 5060H.Add higher nibble and lower nibble of corresponding data and store the result in memory location starting from 8070H.
+
+2. Write an assembly language program of 8085 to combine two hex nibbles stored in 3500 H and 3501 H memory locations, to form a byte. The least significant nibble is stored in 3500 H and most significant nibble is stored in 3501 H. The byte thus combined should be stored in 3502 H. (Let 09 H is stored in 3500 H and 03 H is stored in 3501 H, after the program is executed 3502 H should be loaded with the combined byte 39 H).
+
+3. Transfer the 20 bytes of data stored in memory location 7500H to the memory location starting at 9050H in reverse order.
+
+4. Write an assembly language program of 8085 to separate a hexadecimal number into two nibbles. The hexadecimal number is stored in 9501 H memory location. The least significant nibble of the byte is to be stored in 9502 memory location and the most significant nibble is to be stored in 9503 H memory location. (Suppose 3A H is a byte stored in memory location 9501 H and the lower nibble 0A should be stored in 9502 H and 03 should be stored in 9503 H)
+
+5. Write an assembly language program of 8085 to check a hexadecimal number stored in 6000H memory location for odd or even parity. If the parity is even store data EE H to
+memory location 6001H otherwise store 00 H in 6001 H.
+
+6. 16 data bytes are stored in memory locations 9001 H to 9010 H. Write an assembly language program of 8085 to transfer this block of data bytes to memory locations 9501 to
+9510 H.
+
+7. Write an ALP for 8085 to find the smaller of two numbers stored in memory locations 7101 H and 7102 H. Store the result in memory location 7103 H.
+
+8. 10 8-bit data are stored in memory location C000H to C009H.Transfer these data to another location starting from memory location D050H only if D6 of data is set and D2 of the data
+is reset, otherwise store 00H at destination table.
+
+9. Write a program for 8085 to swap bit D7 and D1 of ten numbers stored in memory at 6050H if any number is greater than 80H and less than A0H. Otherwise set D6 and reset
+D3 of the number stored.
+
+10. WAP for 8085 to swap bit D5 and D0 of 10 numbers stored at memory location starting at 8000H and store the corresponding result at memory location starting at 9000H.
+
+11. Write an ALP to add all the numbers greater than 44H and smaller than 77H from 10 bytes of data present at memory location C050H and reject all others. Store the result at the end
+of the table.
+
+12. Write a program for 8085 to multiply two decimal numbers 34 and 7 and store the answer in memory location 8100H.
+
+13. Write an ALP in 8085 to transfer 20 bytes of data in a table to another table by interchanging D7 and D3 bits of each byte.
+
+14. Write a program in 8085 to calculate the number of ones in the upper nibble of a 8-bitnumber stored in memory location 8050H . Store the count in memory location 8040H.
+
+15. Add all 8-bit number stored in location E000H to E00FH and store 16-bit result at the end of the table.

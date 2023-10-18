@@ -1,0 +1,44 @@
+# anything starting with # is a comment
+# data base for the Class.
+# modify here to add or remove or update routine
+# example format
+
+# for windows do following  no quotes
+# micro |microprocessor && start chrome --app=URL_GOOGLE MEET?authuser=1
+
+#-$$$- and -END-  lable control the start and end of data blocks
+
+#browser chromium / chrome
+# this command gets excuted so be careful
+#name_browser | ?authuser=1  +> is the profile in which google account for meet is logged in
+
+-BrowserCommand-
+chromium|?authuser=0
+-END-
+
+# sub   |full name of subject    |url  need to stat with https:// or http://
+
+-startListingClass-
+Nice_song|Enigma_Mother                                  |https://www.youtube.com/watch?v=GmKUx0aIM-k
+start    |Greeting the class for today has not begin yet |Beauty is in eye of Beholder
+# add lines here removing this line and below
+#........
+Break    |Enjoy the Break time   |
+-END-
+
+# Routine
+# name, day, 1st period start_time hhmm, sub, 2nd period start_time hhmm, sub, .... end_time, NULL
+# example entry   teminate list with NULL
+# this pattern is mandatory otherwise program will crash
+# name , day  start_time, subject , start_time, subject , ....... , start_time, NULL
+# end the list with NULL
+#Sun|700|EM-MM   |840|Math-GDC|1020|Break |1250|Inst-LKC|1430|NULL   time_stamp n termination by NULL is mandatory
+-ClassTimeTable-
+Sun|0|start|700|Nice_song|1430|NULL
+Mon|0   |NULL
+Tue|0   |NULL
+Wed|0   |NULL
+Thu|0   |NULL
+Fri|0   |NULL
+Sat|0   |NULL
+-END-

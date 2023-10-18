@@ -1,0 +1,116 @@
+What is a file stream? Discuss the file stream hierarchy. Discuss the ways of opening a file in C++.
+
+C++ treats all input as a streams just exactly similar to cin , cout, cerr and clog stream. Hence in C++  all the stream are treated equivalently and hence writing to file and reading from the file is just a process that involves file stream.
+There are no such types as predefined stream object while dealing with files. The class ifstream is used to handle input from files and ofstream is for the output to files. The class fstream is ussed for the files where both input and outpur are required.
+the file stream istream and ostream are derive from istream and o stream respectively, and fstream is derived from the class iostream.
+ This is more evident when we look at the file system hierarchy, which is as shown as figure below.
+ 
+ 
+ ios (from ios_base)
+|
++----- istream (cin)
+|         +-------------- ifstream ( file input stream)
+|         +-------------- istringstream ( memory )
+|
++----- ostream (cout)
+          +-------------- ofstream ( file out stream)
+          +-------------- ostringstream ( memory )
+
+   istream               ostream
+      |                     |
+      +----------+----------+
+                 |
+             iostream ( derived fro istream adn ostream )
+                 |
+              fstream  (derived from )
+                 |
+            stringstream
+            
+
+There are may ways on which files may be opened in the c++. These different ways are known as modes.
+There are two base types of file stream class one for input and other of output. There is third one which inherent both of these and is used for opening files in both input and output modes.
+
+The file stream types are ifstream (input), ofstream (output) and fstream (input/output), all defined in header <fstream>.These class inherit from the corresponding stream class and  the only things new are things specific to files: how to open a file given its name, how to close a file, etc.
+
+Opening a file stream
+The easiest way to open a file stream is by creating it:
+example: 
+
+#include<fstream>
+
+fstream file("myfile.txt"); // Opens myfile.txt for input/output
+After doing this, all familiar stream operations in particular, << and >>  can be used on file, just like with cin and cout
+
+string first_line;
+getline(file, first_line); // Get the first line of the file ie till the \n character is encountered
+
+file << "Hello"; // Write some text into the file
+
+
+declaration of file type object example
+fstream file();
+
+file.open("myfile.txt"); // Same as above
+
+when all the operations on the file is done it must be closed by calling member function :
+
+file.close();
+
+by default 
+ifstream opens the file in the read only mode for input from file in stream mode just like input from keyboard
+similarly ostream opens files in a output mode just like a stream output to the terminal display
+while fstream opens files in default fot read and write.
+These default mode can be modified by use of modifiers known as flags and number of them can be combined in any combination by bitwise  OR '|' operator.
+
+examples
+ios::in – Open for input. Note that the file must already exist if you open for in, unless you also add trunc 
+
+ios::out – Open for output. The file may or may not already exist; it will be created if it does not exist (unless when open it for both in and out).
+
+ios::ate – Start the stream position at the end, rather than the beginning, of the file.
+
+ios::app – Only allow writing to the end of the file. This effectively forbids the use of tellp to set the output position, so all writes to the file are appended to the end of it.
+
+ios::trunc – If the file already exists, then erase everything in the file and start at the beginning (this trunc-ates the file). This requires ios::out. If the file does not exist, this will force its creation.
+
+ios::binary – Opens the file in binary mode instead of text mode. In binary mode, only .get() and .put() are really safe to use, and they will do no filtering on the contents of the file at all (i.e., .get() will read in characters that it otherwise would not).
+
+
+// Open for input, but starting at the end
+fstream file("myfile.txt", ios::in | ios_base::ate);
+
+// Open for output, starting at the end (append)
+fstream file2();
+file2.open("stuff.txt", ios_base::out | ios_base::app);
+This opens the file for input only, and starts the stream position at the end of the file. The full list of flags is
+
+ios_base::in – Open for input. Note that the file must already exist if you open for in, unless you also add trunc (see below).
+
+ios_base::out – Open for output. The file may or may not already exist; it will be created if it does not exist (unless you open it for both in and out).
+
+ios_base::ate – Start the stream position at the end, rather than the beginning, of the file.
+
+ios_base::app – Only allow writing to the end of the file. This effectively forbids the use of tellp to set the output position, so all writes to the file are appended to the end of it.
+
+ios_base::trunc – If the file already exists, then erase everything in the file and start at the beginning (this trunc-ates the file). This requires ios_base::out. If the file does not exist, this will force its creation.
+
+ios_base::binary – Opens the file in binary mode instead of text mode. In binary mode, only .get() and .put() are really safe to use, and they will do no filtering on the contents of the file at all (i.e., .get() will read in characters that it otherwise would not).
+
+
+Note: for fstream the default is both in and out, if any of these flags are given then defaults will not be added to them. A common mistake is to write:
+
+example code snippets
+ fstream file;
+ file.open("myFile");   // no flags modifier so default mode if file exist opened for read n write else created for read and write both seekg() and seekp() can be performed. 
+
+ fstream myfile("read-only-file.txt", ios_base::in); //Open the file as an ifstream:
+
+ ifstream myfile("read-only-file.txt"); //ifstreams are always only in.only seekp() is not valid 
+ ofstream myfile("out-write-file.txt"0); //ostrean are always only for output seekg() is not valid
+ 
+ fstream file( "binary-file", ios::binary); // opened in binary mode with default flags read write
+ fstream file;
+ file.open (" myfile1", ios::binary|ios::in ); // opened in the binary mode for in file
+ file.close(); closing of file
+ 
+ file.open("myfile1", ios::binary|ios::app); // opened in the binary mode in the append mode ie only writeable at the end of the file

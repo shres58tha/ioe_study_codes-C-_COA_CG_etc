@@ -1,0 +1,69 @@
+# anything starting with # is a comment
+# data base for the Class.
+# modify here to add or remove or update routine
+# please do not monkey around this as this has a potential (as the command written here gets excuted automatically) to destroy your computer too. risk is yours
+# example format
+
+# for windows do following  no quotes
+# micro |microprocessor && start chrome --app=URL_GOOGLE MEET
+
+#-END-  lable control the start and end of data
+
+#browser chromium / chrome
+#name_browser | ?authuser=1  +> is the profile in which google account for meet is logged in
+-BrowserCommand-
+google-chrome|?authuser=1
+-END-
+
+
+# sub   |full name of subject    |url
+
+-startListingClass-
+Math-NPA|math NPA                |https://meet.google.com/lookup/bo25g377jg
+Math-GBJ|Maths Geeta Bhakta Joshi|https://meet.google.com/lookup/ha44ndz34h
+Math-GDC|Math Ganga DC           |https://meet.google.com/lookup/gp3jtmt52y
+MAth-SA |MAth-SA                 |https://meet.google.com/lookup/hbom65ucbn
+MAth-SG |MAth-SG                 |https://meet.google.com/lookup/hbom65ucbn
+
+EDC-AKR |EDC Amit Kumar Rauniar  |https://meet.google.com/lookup/c4eudhu44v
+EDC-PCR |EDC Prem Chandra Roy    |https://meet.google.com/lookup/c4eudhu44v
+
+EM-MM   |electromagetics Manish Mallick             |https://meet.google.com/lookup/dk6wou4gkb
+
+PS-SS   |Probability and Statistics Sajina shakya   |https://meet.google.com/lookup/bafuy3kv75
+PS-JG   |Probability and Statistics Jagadish Gyawali|https://meet.google.com/lookup/gnztjdna2f
+
+CS-SKR  |Control System Sachindra k Roy             |https://meet.google.com/lookup/gq2bltflb3
+
+Inst-LKC|Instrumentation LaxmiKC                    |https://meet.google.com/lookup/eoorm7bwwa
+Inst-RS |Instrumentation Rabin Shrestha             |https://meet.google.com/lookup/eoorm7bwwa
+
+Break   |Enjoy the Break time   |
+-END-
+
+# Routine
+# name, day, 1st period start_time hhmm, sub, 2nd period start_time hhmm, sub, .... end_time, NULL
+# example entry   teminate list with NULL
+# name , day  start_time, subject , start_time, subject , ....... , start_time, NULL
+# end the list with NULL
+#Sun|700|EM-MM   |840|Math-GDC|1020|Break |1250|Inst-LKC|1430|NULL
+
+
+Sun|700|EM-MM   |840|Math-GDC|1020|Break |1250|Inst-LKC|1430|NULL
+Mon|700|CS-SKR  |840|PS-JG   |1020|NULL
+Tue|700|EM-MM   |840|Math-NPA|1020|Break |1200|EDC-PCR |1340|Inst-LKC|1520|NULL
+Wed|700|MAth-SA |840|CS-SKR  |1020|Break |1200|EDC-AKR |1340|NULL
+Thu|700|EM-MM   |840|PS-SS   |1020|Break |1200|EDC-AKR |1340|NULL
+Fri|700|Math-GBJ|750|Break   |840 |CS-SKR|1020|Break   |1200|Inst-RS |1340|NULL
+Sat|0  |NULL
+
+
+-ClassTimeTable-
+Sun|700|EM-MM |840|Math-GDC|1020|NULL
+Mon|700|CS-SKR|840|PS-JG   |1020|NULL
+Tue|700|EM-MM |840|Math-NPA|1020|Break |1200|EDC-PCR |1340|NULL
+Wed|700|Break |840|CS-SKR  |1020|Break |1200|EDC-AKR |1340|NULL
+Thu|700|EM-MM |840|PS-SS   |1020|Break |1200|EDC-AKR |1340|NULL
+Fri|700|Break |840|CS-SKR  |1020|Break |1200|Inst-RS |1340|NULL
+Sat|0  |NULL
+-END-

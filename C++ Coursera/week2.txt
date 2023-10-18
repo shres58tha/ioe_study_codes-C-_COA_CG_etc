@@ -1,0 +1,35 @@
+ 
+here the array positioning is done as in c.
+ie starts count form 0.
+Here graph is initiated as a list using ARRAY of vector of pairs, ie 2D matrix of pairs
+addEdge funtion adds the element of ARRAY by pushing parameters passed to it. it takes start node (frm), to node (to) and path lenght as (weight).
+
+function printDist() takes the parameters of Initializd array containing information about path lenght from node (source) to all other node and prints/displays it. improvements can be done here by using vector but array works perfectly without increasing complexity. the path lenght to the disconnected node has value of INT_MAX(infinity). 
+
+ShortestPath() function is the function that computes the path lenght from node to node by use of dijkstra's algorithm. it use a queueto calculate ShortestPath.
+inQueue is used to track the vertexs. dist[] array is use to put the calculated path. dist[] is passed by reference hence this information is accesible form the calling funcrion. the array element position also act as the number to destination node. all  dist[] value are initiated as disconnected if INT_MAX except for dist[Source] = 0 where Source is source vertex.
+
+array dist[] stores the shortest distance of all vertex from the source vertex. 
+
+queue is made and push starting source vertex in it.
+while queue is not empty, do the following for each 
+
+edge(u, v) in the graph
+If d[v] > d[u] + weight of edge(u, v)
+d[v] = d[u] + weight of edge(u, v)
+
+If vertex v is not present in Queue, then push the vertex v into the Queue.
+
+main () function :
+vertex is no of vertex the graph contains
+density is the density of edge in graph in percent
+edge_path holds the random value of edge path ranging from 1 to 10
+srand (time()); function initializes the random seed for pseudo-random number generator
+distance[][] is used to store all the shortest path from one vertex to other. the data indicate path lenght while values of rows and colum indicate the vertex. C numbering convenction is used.
+using above information the edge is Initialized randomly
+
+shotrest path function is called using loop for each vertex and data collected in * the rows of matrix distance[]
+
+average edge distance of the whole graph is calculated in main using two for loops and local variables printing the required result.
+
+

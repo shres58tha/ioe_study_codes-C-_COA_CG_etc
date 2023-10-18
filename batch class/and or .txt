@@ -1,0 +1,151 @@
+@echo off
+
+setlocal
+
+set "A=1" & set "B=2" & call :IF_AND
+set "A=1" & set "B=3" & call :IF_AND
+set "A=2" & set "B=2" & call :IF_AND
+set "A=2" & set "B=3" & call :IF_AND
+
+echo.
+
+set "A=1" & set "B=2" & call :IF_OR
+set "A=1" & set "B=3" & call :IF_OR
+set "A=2" & set "B=2" & call :IF_OR
+set "A=2" & set "B=3" & call :IF_OR
+
+exit /b 0
+
+:IF_OR
+( ( if %A% EQU 1 ( type nul>nul ) else type 2>nul ) || ( if %B% EQU 2 ( type nul>nul ) else type 2>nul ) || ( echo.FALSE-& type 2>nul ) ) && echo TRUE+
+
+exit /b 0
+
+:IF_AND
+( ( if %A% EQU 1 ( type nul>nul ) else type 2>nul ) && ( if %B% EQU 2 ( type nul>nul ) else type 2>nul ) && echo.TRUE+ ) || echo.FALSE-
+
+
+exit /b 0
+
+
+#####################################################
+
+It's just as easy as the following:
+
+AND> if+if
+
+if "%VAR1%"=="VALUE" if "%VAR2%"=="VALUE" *do something*
+
+OR> if // if
+
+set BOTH=0
+if "%VAR1%"=="VALUE" if "%VAR2%"=="VALUE" set BOTH=1
+if "%BOTH%"=="0" if "%VAR1%"=="VALUE" *do something*
+if "%BOTH%"=="0" if "%VAR2%"=="VALUE" *do something*
+
+I know that there are other answers, but I think that the mine is more simple, so more easy to understand. Hope this helps you! ;)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+light modification to Andry's answer, reducing duplicate type commands:
+
+set "A=1" & set "B=2" & call :IF_AND
+set "A=1" & set "B=3" & call :IF_AND
+set "A=2" & set "B=2" & call :IF_AND
+set "A=2" & set "B=3" & call :IF_AND
+
+echo.
+
+set "A=1" & set "B=2" & call :IF_OR
+set "A=1" & set "B=3" & call :IF_OR
+set "A=2" & set "B=2" & call :IF_OR
+set "A=2" & set "B=3" & call :IF_OR
+
+goto :eof
+
+:IF_OR
+
+(if /i not %A% EQU 1 (
+   if /i not %B% EQU 2 (
+      echo FALSE-
+      type 2>nul
+   )
+)) && echo TRUE+
+
+goto :eof
+
+:IF_AND
+
+
+(if /i %A% EQU 1 (
+   if /i %B% EQU 2 (
+      echo TRUE+
+      type 2>nul
+   )
+)) && echo FALSE-
+
+goto :eof
+
+
+
+function
+
+@echo off
+SETLOCAL
+CALL :Display 5 , 10
+EXIT /B %ERRORLEVEL%
+:Display
+echo The value of parameter 1 is %~1
+echo The value of parameter 2 is %~2
+EXIT /B 0
+
+
+
+
+Functions can work with return values by simply passing variables names which will hold the return values when a call is made to the function as shown below
+Syntax
+
+Call :function_name value1, value2… valuen
+
+The return values are set in the function using the set command and the tilde(~) character along with the positional number of the parameter.
+
+Following example shows how a function can be called with return values.
+Example
+
+@echo off
+SETLOCAL
+CALL :SetValue value1,value2
+echo %value1%
+echo %value2%
+EXIT /B %ERRORLEVEL%
+:SetValue
+set "%~1 = 5"
+set "%~2 = 10"
+EXIT /B 0
+
+Output
+
+The above command produces the following output.
+
+5 
+10
+
+
+
+
+
+

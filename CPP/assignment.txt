@@ -1,0 +1,128 @@
+//Write a C++ program to calculate the volume of cube, cuboid, and cylinder using function overloading.
+
+
+#include <iostream>
+
+using namespace std;
+int volume(int a){
+    int v1;
+    v1 = a*a*a;
+    return v1;
+    
+}
+int volume(int l, int b, int h){
+    int v2;
+    v2 = l*b*h;
+    return v2;
+    
+}
+float volume(int r, int h){
+    float v3;
+    float pi = 3.14;
+    v3 = pi*r*r*h;
+    return v3;
+}
+int main()
+{
+    
+  cout<<"the volume of the cube is :"<<volume(1)<<endl;
+  cout<<"the volume of the cunoid is:"<<volume(2,3,4)<<endl;
+  cout<<"the volume of the cylinder is:"<<float (volume(6,7))<<endl;
+  
+    
+
+    return 0;
+}
+/*output of the program :the volume of the cube is:8
+the volume of the cuboid is:
+the volume of the cylinder is:   *./
+
+
+//Write a C++ program that will ask for a temperature in Fahrenheit and display it in Celcius
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int F,temp;
+float C;
+cout<<"enter the temperature in F :"<<endl;
+cin>>F;
+temp = F-32;
+C = temp*5/9;
+cout<<"the temperature in C is :"<<C<<endl; 
+return 0 ;
+}
+/*output of the program is 
+enter the temperature in fahrenheit : 
+the temperature in celcius is :  */
+
+/*Write a C++ program to calculate the Circumference of a Circle given the radius that is requested from the user. 
+The function that calculates the circumference should be an Inline Function.*/
+
+#include <iostream>
+using namespace std;
+
+
+
+inline float circumference(int r){
+    float cir;
+    float pi = 3.14;
+    cir = 2*pi*r;
+    return cir;
+}
+int main(){
+    cout<<"the circumference is:"<<circumference (1)<<endl;
+    return 0 ;
+    
+}
+/*the output of the program is :
+the circumference is:  */
+
+
+/*Write a C++ program to calculate the Simple Interest using function. 
+The default time period to calculate the Simple Interest is 1 year. (Hint: Use Default Argument)*/
+#include<iostream>
+
+using namespace std;
+void interest(int principal,int rate,int time = 1){
+	float interest ;
+	interest = (principal*rate*time)/100;
+	return interest;
+}
+int main(){
+	cout<<"the interst is:"<<interest(1, 2,3)<<endl;
+	return 0;
+}
+/*the output of  the program is:
+the interest is: */
+
+/*Write a very simple C++ program using the concept of Class and Objects (Optional Question)*/
+#include<iostream>
+using namespace std;
+class @someclass name{
+	public:
+	void @somefunction(){
+		cout<<"@someoutput"<<endl;
+		
+	}
+};
+int main(){
+	@someclass obj;
+	obj.@somefunction();
+	return 0;
+}
+/*output of the program 
+@someoutput */
+
+
+
+
+
+
+
+
+
+
+
+

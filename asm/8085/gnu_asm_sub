@@ -1,0 +1,24 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+lda  50h
+sta  8050h
+lda  40h
+sta  8040h
+
+
+lxi  h, 8050h
+mov  a, m
+lxi  h, 8040h
+mov  b, m
+sub  b
+lxi  h, 0A560h
+mov  m, a
+hlt

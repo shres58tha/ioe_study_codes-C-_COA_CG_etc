@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+/* ellipse and circle)*/
+void main ()
+{
+	int gdriver=DETECT,gmode;
+	int x, y, radius;
+	initgraph(&gdriver,&gmode, "C:\\turboc3\\bgi");
+	setcolor(GREEN);
+	line(120,40,520,40);
+	line(120,440,520,440);
+	line(120,40,120,440);
+	line(520,40,520,440);
+	setcolor(WHITE);
+	circle(320,140,100);
+	circle(520,140,100);
+	setcolor(RED);
+	rectangle(320,140,370,440);
+	getch();
+	closegraph();
+}
+
+
+

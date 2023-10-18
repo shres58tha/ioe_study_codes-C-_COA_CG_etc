@@ -1,0 +1,525 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Detail	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^class Detail{$/;"	c	file:
+Detail::Detail_input	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	void Detail_input(string n,string a,string p,string e){$/;"	f	class:Detail
+Detail::address	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	string name,address;$/;"	m	class:Detail	file:
+Detail::displayD	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	void displayD(){$/;"	f	class:Detail
+Detail::email	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	string email;$/;"	m	class:Detail	file:
+Detail::name	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	string name,address;$/;"	m	class:Detail	file:
+Detail::phone	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	string phone;$/;"	m	class:Detail	file:
+Detail_input	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	void Detail_input(string n,string a,string p,string e){$/;"	f	class:Detail
+Employee	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^class Employee: public Human, public Work{  \/\/ inherit account  \/\/ inherit faculty.$/;"	c	file:
+Employee::index	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    int index=0;$/;"	m	class:Employee	file:
+Employee::nat	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    char nat[5]={'\\0','m','p','h','d'};$/;"	m	class:Employee	file:
+Employee::nature	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    const std::string nature[5]={"\\0","full time ", "part time ", "temp_hr ","temp_day "} ;$/;"	m	class:Employee	file:
+Employee::set_type_	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    void set_type_(){$/;"	f	class:Employee
+Faculty	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^class Faculty{$/;"	c
+Faculty::address	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        string address;$/;"	m	class:Faculty
+Faculty::contact_number	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        vector <unsigned long int> contact_number;$/;"	m	class:Faculty
+Faculty::email	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        vector <string> email;$/;"	m	class:Faculty
+Faculty::faculty_name	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        string faculty_name;$/;"	m	class:Faculty
+Faculty::input_address	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_address        ( ) ;        $/;"	p	class:Faculty
+Faculty::input_contact_number	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_contact_number ( ) ;$/;"	p	class:Faculty
+Faculty::input_data	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_data           ( ) ;$/;"	p	class:Faculty
+Faculty::input_email	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_email          ( ) ; $/;"	p	class:Faculty
+Faculty::input_name	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_name           ( ) ;        $/;"	p	class:Faculty
+Faculty::show_data	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void show_data            ( ) ;$/;"	p	class:Faculty
+Fee	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^class Fee{$/;"	c	file:
+Fee::Fee_input	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	 void Fee_input(float t,float p){$/;"	f	class:Fee
+Fee::displayF	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	void displayF(){$/;"	f	class:Fee
+Fee::due	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	float pay,due;$/;"	m	class:Fee	file:
+Fee::pay	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	float pay,due;$/;"	m	class:Fee	file:
+Fee::total_pay	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	float total_pay;$/;"	m	class:Fee	file:
+Fee_input	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	 void Fee_input(float t,float p){$/;"	f	class:Fee
+Human	/home/shr/Desktop/cpract/CPP/project/human_.h	/^class Human{$/;"	c
+Human::address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::string address;$/;"	m	class:Human
+Human::contact_number	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::vector <unsigned long int> contact_number;$/;"	m	class:Human
+Human::email	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::vector <std::string> email;$/;"	m	class:Human
+Human::get_address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        string get_address        ( ) ;\/\/ $/;"	p	class:Human
+Human::get_name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        string get_name           ( ) ;\/\/ need to implement this get required for searching $/;"	p	class:Human
+Human::input_address	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_address ( ){ $/;"	f	class:Human
+Human::input_address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_address        ( ) ;        $/;"	p	class:Human
+Human::input_contact_number	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_contact_number( ) {$/;"	f	class:Human
+Human::input_contact_number	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_contact_number ( ) ;$/;"	p	class:Human
+Human::input_data	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_data ( ) {$/;"	f	class:Human
+Human::input_data	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_data           ( ) ;$/;"	p	class:Human
+Human::input_email	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_email ( ) { $/;"	f	class:Human
+Human::input_email	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_email          ( ) ; $/;"	p	class:Human
+Human::input_name	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_name ( ){ $/;"	f	class:Human
+Human::input_name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_name           ( ) ;        $/;"	p	class:Human
+Human::name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::string name;$/;"	m	class:Human
+Human::show_data	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::show_data ( ) {$/;"	f	class:Human
+Human::show_data	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void show_data            ( ) ;$/;"	p	class:Human
+Institute	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^class Institute {$/;"	c
+Institute::address	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        string address;$/;"	m	class:Institute
+Institute::contact_number	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        vector <unsigned long int> contact_number;$/;"	m	class:Institute
+Institute::email	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        vector <string> email;$/;"	m	class:Institute
+Institute::input_address	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_address ( ){ $/;"	f	class:Institute
+Institute::input_address	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_address        ( ) ;        $/;"	p	class:Institute
+Institute::input_contact_number	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_contact_number( ) {$/;"	f	class:Institute
+Institute::input_contact_number	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_contact_number ( ) ;$/;"	p	class:Institute
+Institute::input_data	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_data ( ) {$/;"	f	class:Institute
+Institute::input_data	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_data           ( ) ;$/;"	p	class:Institute
+Institute::input_email	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_email ( ) { $/;"	f	class:Institute
+Institute::input_email	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_email          ( ) ; $/;"	p	class:Institute
+Institute::input_name	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_name ( ){ $/;"	f	class:Institute
+Institute::input_name	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_name           ( ) ;        $/;"	p	class:Institute
+Institute::name	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        string name;$/;"	m	class:Institute
+Institute::show_data	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::show_data ( ) {$/;"	f	class:Institute
+Institute::show_data	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void show_data            ( ) ;$/;"	p	class:Institute
+LOG	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^#define LOG /;"	d
+MY_FACULTY_H	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^#define MY_FACULTY_H$/;"	d
+MY_HUMAN_H	/home/shr/Desktop/cpract/CPP/project/human_.h	/^#define MY_HUMAN_H$/;"	d
+MY_INPUT_H	/home/shr/Desktop/cpract/CPP/project/input_.h	/^#define MY_INPUT_H$/;"	d
+MY_INSTITUTE_H	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^#define MY_INSTITUTE_H$/;"	d
+MY_INSTITUTE_H	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^#define MY_INSTITUTE_H$/;"	d
+MY_TIME_H	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^#define MY_TIME_H$/;"	d
+MY_WORKTIME_H	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^#define MY_WORKTIME_H$/;"	d
+MY_WORK_H	/home/shr/Desktop/cpract/CPP/project/work_.h	/^#define MY_WORK_H$/;"	d
+N	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^namespace N  \/\/ namespace declaration$/;"	n
+N::P	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    inline namespace P$/;"	n	namespace:N
+N::PI	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    const double PI = 3.14;  \/\/ const and constexpr definitions$/;"	m	namespace:N
+N::RGB	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    struct RGB$/;"	s	namespace:N
+N::colors	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    enum class colors : short { red, blue, purple, azure };$/;"	c	namespace:N
+N::colors::blue	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    enum class colors : short { red, blue, purple, azure };$/;"	m	class:N::colors
+N::colors::purple	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    enum class colors : short { red, blue, purple, azure };$/;"	m	class:N::colors
+N::colors::red	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    enum class colors : short { red, blue, purple, azure };$/;"	m	class:N::colors
+N::get_meaning	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    constexpr int get_meaning()$/;"	f	namespace:N
+N::my_class	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    class my_class   \/\/ regular class definition,$/;"	c	namespace:N
+N::my_class::do_something	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        void do_something();   \/\/ definition in my_class.cpp$/;"	p	class:N::my_class
+N::my_class::i	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        int i;$/;"	m	class:N::my_class
+N::my_class::other_class	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        friend class other_class;$/;"	x
+N::my_class::put_value	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        inline void put_value(int i) { vals.push_back(i); } \/\/ inline OK$/;"	f	class:N::my_class
+N::my_class::vals	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        vstr vals;$/;"	m	class:N::my_class
+N::print_to_log	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    void print_to_log();$/;"	p	namespace:N
+N::value_store	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    class value_store$/;"	c	namespace:N
+N::value_store::vals	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        std::vector<T> vals;$/;"	m	class:N::value_store
+N::value_store::value_store	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        value_store<T>() = default;$/;"	p	class:N::value_store
+N::value_store::write_value	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        void write_value(T val)$/;"	f	class:N::value_store
+N::value_widget	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    class value_widget;$/;"	x
+P	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    inline namespace P$/;"	n	namespace:N
+PI	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    const double PI = 3.14;  \/\/ const and constexpr definitions$/;"	m	namespace:N
+RGB	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    struct RGB$/;"	s	namespace:N
+Student	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^class Student: public Detail,public Fee {$/;"	c	file:
+Student	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        Student (){                                             \/\/default constructor$/;"	f	class:Student
+Student	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        Student (string name, int roll, bool attend  ){             \/\/build student by arguments$/;"	f	class:Student
+Student	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^class Student{$/;"	c	file:
+Student	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        Student (){                                             \/\/default constructor$/;"	f	class:Student
+Student	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        Student (string name, int roll, bool attend  ){             \/\/build student by arguments$/;"	f	class:Student
+Student	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^class Student{$/;"	c	file:
+Student	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        Student (){                                             \/\/default constructor$/;"	f	class:Student
+Student	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        Student (string name, int roll, bool attend  ){             \/\/build student by arguments$/;"	f	class:Student
+Student	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^class Student{$/;"	c	file:
+Student::Student	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        Student (){                                             \/\/default constructor$/;"	f	class:Student
+Student::Student	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        Student (string name, int roll, bool attend  ){             \/\/build student by arguments$/;"	f	class:Student
+Student::Student	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        Student (){                                             \/\/default constructor$/;"	f	class:Student
+Student::Student	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        Student (string name, int roll, bool attend  ){             \/\/build student by arguments$/;"	f	class:Student
+Student::Student	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        Student (){                                             \/\/default constructor$/;"	f	class:Student
+Student::Student	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        Student (string name, int roll, bool attend  ){             \/\/build student by arguments$/;"	f	class:Student
+Student::discount	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        float discount; \/\/not implemented yet$/;"	m	class:Student	file:
+Student::discount	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        float discount; \/\/not implemented yet$/;"	m	class:Student	file:
+Student::discount	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        float discount; \/\/not implemented yet$/;"	m	class:Student	file:
+Student::display	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	void display(){$/;"	f	class:Student
+Student::display	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        void display();$/;"	p	class:Student	file:
+Student::display	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void Student::display(){         \/\/ displays the data in the object$/;"	f	class:Student
+Student::display	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        void display();$/;"	p	class:Student	file:
+Student::display	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void Student::display(){         \/\/ displays the data in the object$/;"	f	class:Student
+Student::display	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        void display();$/;"	p	class:Student	file:
+Student::display	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^void Student::display(){         \/\/ displays the data in the object$/;"	f	class:Student
+Student::due	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        float due;      \/\/ not implemented yet$/;"	m	class:Student	file:
+Student::due	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        float due;      \/\/ not implemented yet$/;"	m	class:Student	file:
+Student::due	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        float due;      \/\/ not implemented yet$/;"	m	class:Student	file:
+Student::input	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        void input();$/;"	p	class:Student	file:
+Student::input	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void Student::input(){$/;"	f	class:Student
+Student::input	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        void input();$/;"	p	class:Student	file:
+Student::input	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void Student::input(){$/;"	f	class:Student
+Student::input	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        void input();$/;"	p	class:Student	file:
+Student::input	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^void Student::input(){                                               \/\/ enter student data one by one$/;"	f	class:Student
+Student::paid_amount	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        float paid_amount; \/\/ not implemented$/;"	m	class:Student	file:
+Student::paid_amount	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        float paid_amount; \/\/ not implemented$/;"	m	class:Student	file:
+Student::paid_amount	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        float paid_amount; \/\/ not implemented$/;"	m	class:Student	file:
+Student::paid_till_month	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        int  paid_till_month; \/\/not implemented$/;"	m	class:Student	file:
+Student::paid_till_month	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        int  paid_till_month; \/\/not implemented$/;"	m	class:Student	file:
+Student::paid_till_month	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        int  paid_till_month; \/\/not implemented$/;"	m	class:Student	file:
+Student::presence	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        bool presence;$/;"	m	class:Student	file:
+Student::presence	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        bool presence;$/;"	m	class:Student	file:
+Student::presence	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        bool presence;$/;"	m	class:Student	file:
+Student::roll_no	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        int roll_no;$/;"	m	class:Student	file:
+Student::roll_no	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        int roll_no;$/;"	m	class:Student	file:
+Student::roll_no	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        int roll_no;$/;"	m	class:Student	file:
+Student::std_name	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        string std_name;$/;"	m	class:Student	file:
+Student::std_name	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        string std_name;$/;"	m	class:Student	file:
+Student::std_name	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        string std_name;$/;"	m	class:Student	file:
+Tempus	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^class Tempus{               \/\/ strictly public inheritance $/;"	c
+Tempus::current_date	/home/shr/Desktop/cpract/CPP/project/tempus_.cpp	/^    void Tempus::current_date(){$/;"	f	class:Tempus
+Tempus::current_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void current_date(){$/;"	f	class:Tempus
+Tempus::day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int day=0;$/;"	m	class:Tempus
+Tempus::days_in_month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int days_in_month(int y, int m){  \/\/ possible bug on irrelevant pass of data$/;"	f	class:Tempus
+Tempus::get_day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_day() { return day  ;}$/;"	f	class:Tempus
+Tempus::get_month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_month() { return month ;}$/;"	f	class:Tempus
+Tempus::get_weekday	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_weekday() { return weekday ;}$/;"	f	class:Tempus
+Tempus::get_year	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_year() { return year ;}$/;"	f	class:Tempus
+Tempus::month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int month=0;        \/\/ to indicate date invalid$/;"	m	class:Tempus
+Tempus::set_date	/home/shr/Desktop/cpract/CPP/project/tempus_.cpp	/^    void Tempus::set_date(std::string str=""){$/;"	f	class:Tempus
+Tempus::set_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void set_date(std::string str=""){$/;"	f	class:Tempus
+Tempus::show_date	/home/shr/Desktop/cpract/CPP/project/tempus_.cpp	/^    void Tempus::show_date(std::string str=""){  \/\/ argument to print the passed header of the date;$/;"	f	class:Tempus
+Tempus::show_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void show_date(std::string str=""){  \/\/ argument to print the passed header of the date;$/;"	f	class:Tempus
+Tempus::week_day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int week_day( int y, int m, int d){ \/\/ possible bug on irrelevant pass of data$/;"	f	class:Tempus
+Tempus::week_day_name	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        const std::string week_day_name[7] = {"sunday","monday","tuesday","wednesday","thursday","friday","saturday"};$/;"	m	class:Tempus
+Tempus::weekday	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int weekday; \/\/ 0 = sun 6 = sat$/;"	m	class:Tempus
+Tempus::year	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int year=0;$/;"	m	class:Tempus
+Work	/home/shr/Desktop/cpract/CPP/project/work_.h	/^class Work{                 \/\/ strictly public inheritance $/;"	c
+Work::current	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+Work::display_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void display_work_nature(){$/;"	f	class:Work
+Work::display_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void display_work_rec(std::string str=""){$/;"	f	class:Work
+Work::display_work_rec	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^void  Work::display_work_rec(std::string str=""){$/;"	f	class:Work
+Work::edit_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void edit_work_nature (){ input_work_nature();}  \/\/alias$/;"	f	class:Work
+Work::edit_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void edit_work_rec(){$/;"	f	class:Work
+Work::edit_work_rec	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^void  Work::edit_work_rec(){$/;"	f	class:Work
+Work::end	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+Work::get_recorded_y	/home/shr/Desktop/cpract/CPP/project/work_.h	/^int  get_recorded_y(){return recorded_y;}$/;"	f	class:Work
+Work::get_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^char get_work_nature(){return work_nature;}$/;"	f	class:Work
+Work::get_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^int  get_work_rec(){$/;"	f	class:Work
+Work::get_work_rec	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^int   Work::get_work_rec(){$/;"	f	class:Work
+Work::input_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void input_work_nature(){$/;"	f	class:Work
+Work::input_work_nature	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^void Work::input_work_nature(){$/;"	f	class:Work
+Work::input_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void input_work_rec(std::string str="") {$/;"	f	class:Work
+Work::input_work_rec	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^void  Work::input_work_rec(std::string str="") {$/;"	f	class:Work
+Work::recorded_m	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    int recorded_m=0;$/;"	m	class:Work
+Work::recorded_y	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    int recorded_y=-1; \/\/ year in the record as y=0 is valid argument$/;"	m	class:Work
+Work::set_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void set_work_nature(char ch){work_nature=ch;}$/;"	f	class:Work
+Work::start	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+Work::work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    char work_nature;     \/\/d=week_day h=hr  p=period  m=monthly$/;"	m	class:Work
+Work::work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    std::vector<std::vector<int> > work_rec; \/\/ for storing the work info for each month in int array [y][m]$/;"	m	class:Work
+X	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^struct X {$/;"	s	file:
+X::bar	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^    void bar(const std::string& str) {$/;"	f	struct:X
+X::foo	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^    void foo(int i, const std::string& str) {$/;"	f	struct:X
+X::operator ()	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^    int operator()(int i) {$/;"	f	struct:X
+address	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	string name,address;$/;"	m	class:Detail	file:
+address	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        string address;$/;"	m	class:institute	file:
+address	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        string address;$/;"	m	class:institute
+address	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        string address;$/;"	m	class:Faculty
+address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::string address;$/;"	m	class:Human
+address	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        string address;$/;"	m	class:Institute
+angle	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^    double angle;$/;"	m	struct:polar
+bar	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^    void bar(const std::string& str) {$/;"	f	struct:X
+blue	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    enum class colors : short { red, blue, purple, azure };$/;"	m	class:N::colors
+colors	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    enum class colors : short { red, blue, purple, azure };$/;"	c	namespace:N
+contact_number	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        vector <unsigned long int> contact_number;$/;"	m	class:institute	file:
+contact_number	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        vector <unsigned long int> contact_number;$/;"	m	class:institute
+contact_number	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        vector <unsigned long int> contact_number;$/;"	m	class:Faculty
+contact_number	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::vector <unsigned long int> contact_number;$/;"	m	class:Human
+contact_number	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        vector <unsigned long int> contact_number;$/;"	m	class:Institute
+containsOnlyDigit	/home/shr/Desktop/cpract/CPP/project/backup/str.cpp	/^bool containsOnlyDigit(string str) $/;"	f
+current	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    }start, current, end;$/;"	m	class:worktime	typeref:struct:worktime::__anon3
+current	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+current_date	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^void current_date(){$/;"	f	class:worktime
+current_date	/home/shr/Desktop/cpract/CPP/project/tempus_.cpp	/^    void Tempus::current_date(){$/;"	f	class:Tempus
+current_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void current_date(){$/;"	f	class:Tempus
+day	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int day;$/;"	m	struct:worktime::__anon2
+day	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int day;$/;"	m	union:worktime::__anon1
+day	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int day=0;$/;"	m	struct:worktime::__anon3
+day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int day=0;$/;"	m	class:Tempus
+days_in_month	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^int days_in_month(int y, int m){$/;"	f	class:worktime
+days_in_month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int days_in_month(int y, int m){  \/\/ possible bug on irrelevant pass of data$/;"	f	class:Tempus
+discount	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        float discount; \/\/not implemented yet$/;"	m	class:Student	file:
+discount	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        float discount; \/\/not implemented yet$/;"	m	class:Student	file:
+discount	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        float discount; \/\/not implemented yet$/;"	m	class:Student	file:
+display	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	void display(){$/;"	f	class:Student
+display	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        void display();$/;"	p	class:Student	file:
+display	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void Student::display(){         \/\/ displays the data in the object$/;"	f	class:Student
+display	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        void display();$/;"	p	class:Student	file:
+display	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void Student::display(){         \/\/ displays the data in the object$/;"	f	class:Student
+display	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        void display();$/;"	p	class:Student	file:
+display	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^void Student::display(){         \/\/ displays the data in the object$/;"	f	class:Student
+displayD	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	void displayD(){$/;"	f	class:Detail
+displayF	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	void displayF(){$/;"	f	class:Fee
+display_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void display_work_nature(){$/;"	f	class:Work
+display_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void display_work_rec(std::string str=""){$/;"	f	class:Work
+display_work_rec	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^void  Work::display_work_rec(std::string str=""){$/;"	f	class:Work
+distance	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^    double distance;$/;"	m	struct:polar
+do_something	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        void do_something();   \/\/ definition in my_class.cpp$/;"	p	class:N::my_class
+due	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	float pay,due;$/;"	m	class:Fee	file:
+due	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        float due;      \/\/ not implemented yet$/;"	m	class:Student	file:
+due	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        float due;      \/\/ not implemented yet$/;"	m	class:Student	file:
+due	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        float due;      \/\/ not implemented yet$/;"	m	class:Student	file:
+edit_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void edit_work_nature (){ input_work_nature();}  \/\/alias$/;"	f	class:Work
+edit_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void edit_work_rec(){$/;"	f	class:Work
+edit_work_rec	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^void  Work::edit_work_rec(){$/;"	f	class:Work
+email	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	string email;$/;"	m	class:Detail	file:
+email	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        vector <string> email;$/;"	m	class:institute	file:
+email	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        vector <string> email;$/;"	m	class:institute
+email	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        vector <string> email;$/;"	m	class:Faculty
+email	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::vector <std::string> email;$/;"	m	class:Human
+email	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        vector <string> email;$/;"	m	class:Institute
+end	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    }start, current, end;$/;"	m	class:worktime	typeref:struct:worktime::__anon3
+end	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+faculty_name	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        string faculty_name;$/;"	m	class:Faculty
+find_max	/home/shr/Desktop/cpract/CPP/project/backup/template_example_book/main.cpp	/^T find_max( T a, T b){$/;"	f
+find_max	/home/shr/Desktop/cpract/CPP/project/backup/template_example_book/main.cpp	/^char *find_max( char* a, char * b){$/;"	f
+fn_years29	/home/shr/Desktop/cpract/CPP/project/Nepali_date_java.js	/^	function fn_years29(year,years29)$/;"	f	function:myFunction
+fn_years30	/home/shr/Desktop/cpract/CPP/project/Nepali_date_java.js	/^	function fn_years30(year,years30)$/;"	f	function:myFunction
+fn_years31	/home/shr/Desktop/cpract/CPP/project/Nepali_date_java.js	/^	function fn_years31(year,years31)$/;"	f	function:myFunction
+fn_years32	/home/shr/Desktop/cpract/CPP/project/Nepali_date_java.js	/^	function fn_years32(year,years32)$/;"	f	function:myFunction
+foo	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^    void foo(int i, const std::string& str) {$/;"	f	struct:X
+get_address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        string get_address        ( ) ;\/\/ $/;"	p	class:Human
+get_day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_day() { return day  ;}$/;"	f	class:Tempus
+get_meaning	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    constexpr int get_meaning()$/;"	f	namespace:N
+get_month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_month() { return month ;}$/;"	f	class:Tempus
+get_name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        string get_name           ( ) ;\/\/ need to implement this get required for searching $/;"	p	class:Human
+get_recorded_y	/home/shr/Desktop/cpract/CPP/project/work_.h	/^int  get_recorded_y(){return recorded_y;}$/;"	f	class:Work
+get_weekday	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_weekday() { return weekday ;}$/;"	f	class:Tempus
+get_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^char get_work_nature(){return work_nature;}$/;"	f	class:Work
+get_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^int  get_work_rec(){$/;"	f	class:Work
+get_work_rec	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^int   Work::get_work_rec(){$/;"	f	class:Work
+get_year	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    int get_year() { return year ;}$/;"	f	class:Tempus
+hr	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int hr; $/;"	m	union:worktime::__anon1
+i	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        int i;$/;"	m	class:N::my_class
+index	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    int index=0;$/;"	m	class:Employee	file:
+input	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        void input();$/;"	p	class:Student	file:
+input	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void Student::input(){$/;"	f	class:Student
+input	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        void input();$/;"	p	class:Student	file:
+input	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void Student::input(){$/;"	f	class:Student
+input	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        void input();$/;"	p	class:Student	file:
+input	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^void Student::input(){                                               \/\/ enter student data one by one$/;"	f	class:Student
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_.cpp	/^void input_( string str, bool *p){  \/\/ input bool to bool pointer $/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_.cpp	/^void input_( string str, double *p){  \/\/ input double to double pointer$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_.cpp	/^void input_( string str, float *p){  \/\/ input float to float pointer$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_.cpp	/^void input_( string str, int *p){  \/\/ input int to int pointer$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_.cpp	/^void input_( string str, string *p){  \/\/ input string to string pointer$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void input_( string str, bool *p){  \/\/ input bool to bool pointer $/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void input_( string str, double *p){  \/\/ input double to double pointer$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void input_( string str, float *p){  \/\/ input float to float pointer$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void input_( string str, int *p){  \/\/ input int to int pointer$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void input_( string str, string *p){  \/\/ input string to string pointer$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/input_.cpp	/^void input_( bool *p){   \/\/ template overloaded$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/input_.cpp	/^void input_( std::string str, std::string *p){  \/\/ input string to string pointer  \/\/ template overloaded$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/input_.h	/^void input_( bool *p);$/;"	p
+input_	/home/shr/Desktop/cpract/CPP/project/input_.h	/^void input_( std::string str, T *p){  \/\/ get input  with error checking$/;"	f
+input_	/home/shr/Desktop/cpract/CPP/project/input_.h	/^void input_( std::string str, std::string *p);$/;"	p
+input_address	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_address ( )  { input_("Enter the address :", &address);  }$/;"	f	class:institute
+input_address	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_address ( ){ $/;"	f	class:institute
+input_address	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_address        ( ) ;        $/;"	p	class:institute
+input_address	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_address ( ){ $/;"	f	class:institute
+input_address	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_address        ( ) ;        $/;"	p	class:Faculty
+input_address	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_address ( ){ $/;"	f	class:Human
+input_address	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_address        ( ) ;        $/;"	p	class:Human
+input_address	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_address ( ){ $/;"	f	class:Institute
+input_address	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_address        ( ) ;        $/;"	p	class:Institute
+input_bool	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void input_bool( string str, bool *p){  \/\/ input bool to bool pointer $/;"	f
+input_bool_yn	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void input_bool_yn( bool *p){  \/\/ input bool to bool pointer $/;"	f
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_contact_number( )  {$/;"	f	class:institute
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_contact_number( ) {$/;"	f	class:institute
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_contact_number ( ) ;$/;"	p	class:institute
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_contact_number( ) {$/;"	f	class:institute
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_contact_number ( ) ;$/;"	p	class:Faculty
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_contact_number( ) {$/;"	f	class:Human
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_contact_number ( ) ;$/;"	p	class:Human
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_contact_number( ) {$/;"	f	class:Institute
+input_contact_number	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_contact_number ( ) ;$/;"	p	class:Institute
+input_data	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_data ( ) {$/;"	f	class:institute
+input_data	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_data ( ) {$/;"	f	class:institute
+input_data	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_data           ( ) ;$/;"	p	class:institute
+input_data	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_data ( ) {$/;"	f	class:institute
+input_data	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_data           ( ) ;$/;"	p	class:Faculty
+input_data	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_data ( ) {$/;"	f	class:Human
+input_data	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_data           ( ) ;$/;"	p	class:Human
+input_data	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_data ( ) {$/;"	f	class:Institute
+input_data	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_data           ( ) ;$/;"	p	class:Institute
+input_double	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void input_double( string str, double *p){  \/\/ input double to double pointer$/;"	f
+input_email	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_email ( )   {$/;"	f	class:institute
+input_email	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_email ( ) { $/;"	f	class:institute
+input_email	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_email          ( ) ; $/;"	p	class:institute
+input_email	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_email ( ) { $/;"	f	class:institute
+input_email	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_email          ( ) ; $/;"	p	class:Faculty
+input_email	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_email ( ) { $/;"	f	class:Human
+input_email	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_email          ( ) ; $/;"	p	class:Human
+input_email	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_email ( ) { $/;"	f	class:Institute
+input_email	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_email          ( ) ; $/;"	p	class:Institute
+input_float	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void input_float( string str, float *p){  \/\/ input float to float pointer$/;"	f
+input_int	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void input_int( string str, int *p){  \/\/ input int to int pointer$/;"	f
+input_name	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_name ( )  { input_("Enter the Institute Name :", &name); }$/;"	f	class:institute
+input_name	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_name ( ){ $/;"	f	class:institute
+input_name	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_name           ( ) ;        $/;"	p	class:institute
+input_name	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_name ( ){ $/;"	f	class:institute
+input_name	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void input_name           ( ) ;        $/;"	p	class:Faculty
+input_name	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::input_name ( ){ $/;"	f	class:Human
+input_name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void input_name           ( ) ;        $/;"	p	class:Human
+input_name	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::input_name ( ){ $/;"	f	class:Institute
+input_name	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void input_name           ( ) ;        $/;"	p	class:Institute
+input_str	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^void input_str( string str, string *p){  \/\/ input string to string pointer$/;"	f
+input_work_duratiion	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^void input_work_duratiion(){  \/\/overloading general function$/;"	f	class:worktime
+input_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void input_work_nature(){$/;"	f	class:Work
+input_work_nature	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^void Work::input_work_nature(){$/;"	f	class:Work
+input_work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void input_work_rec(std::string str="") {$/;"	f	class:Work
+input_work_rec	/home/shr/Desktop/cpract/CPP/project/work_1.cpp	/^void  Work::input_work_rec(std::string str="") {$/;"	f	class:Work
+input_yn_	/home/shr/Desktop/cpract/CPP/project/backup/input_.cpp	/^void input_yn_( bool *p){  \/\/ input bool to bool pointer $/;"	f
+input_yn_	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^void input_yn_( bool *p){  \/\/ input bool to bool pointer $/;"	f
+institute	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^class institute {$/;"	c	file:
+institute	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^class institute {$/;"	c
+institute::address	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        string address;$/;"	m	class:institute	file:
+institute::address	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        string address;$/;"	m	class:institute
+institute::contact_number	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        vector <unsigned long int> contact_number;$/;"	m	class:institute	file:
+institute::contact_number	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        vector <unsigned long int> contact_number;$/;"	m	class:institute
+institute::email	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        vector <string> email;$/;"	m	class:institute	file:
+institute::email	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        vector <string> email;$/;"	m	class:institute
+institute::input_address	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_address ( )  { input_("Enter the address :", &address);  }$/;"	f	class:institute
+institute::input_address	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_address ( ){ $/;"	f	class:institute
+institute::input_address	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_address        ( ) ;        $/;"	p	class:institute
+institute::input_address	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_address ( ){ $/;"	f	class:institute
+institute::input_contact_number	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_contact_number( )  {$/;"	f	class:institute
+institute::input_contact_number	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_contact_number( ) {$/;"	f	class:institute
+institute::input_contact_number	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_contact_number ( ) ;$/;"	p	class:institute
+institute::input_contact_number	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_contact_number( ) {$/;"	f	class:institute
+institute::input_data	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_data ( ) {$/;"	f	class:institute
+institute::input_data	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_data ( ) {$/;"	f	class:institute
+institute::input_data	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_data           ( ) ;$/;"	p	class:institute
+institute::input_data	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_data ( ) {$/;"	f	class:institute
+institute::input_email	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_email ( )   {$/;"	f	class:institute
+institute::input_email	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_email ( ) { $/;"	f	class:institute
+institute::input_email	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_email          ( ) ; $/;"	p	class:institute
+institute::input_email	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_email ( ) { $/;"	f	class:institute
+institute::input_name	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void input_name ( )  { input_("Enter the Institute Name :", &name); }$/;"	f	class:institute
+institute::input_name	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::input_name ( ){ $/;"	f	class:institute
+institute::input_name	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void input_name           ( ) ;        $/;"	p	class:institute
+institute::input_name	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::input_name ( ){ $/;"	f	class:institute
+institute::name	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        string name;$/;"	m	class:institute	file:
+institute::name	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        string name;$/;"	m	class:institute
+institute::show_data	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void show_data ( )    {$/;"	f	class:institute
+institute::show_data	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::show_data ( ) {$/;"	f	class:institute
+institute::show_data	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void show_data            ( ) ;$/;"	p	class:institute
+institute::show_data	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::show_data ( ) {$/;"	f	class:institute
+m	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^std::mutex m;$/;"	v
+main	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^int main()$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^int main(){$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/header example/main.cpp	/^int main ()$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^int main(){$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^int main(){$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/str.cpp	/^int main() $/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/str1.cpp	/^int main() $/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^int main(){$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/template_example_book/main.cpp	/^int main(){$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/test1.cpp	/^int main ()$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/backup/vector.cpp	/^int main() {$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/check.cpp	/^int main() $/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^int main(){$/;"	f
+main	/home/shr/Desktop/cpract/CPP/project/worktime_.cpp	/^int main(){$/;"	f
+month	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int month;$/;"	m	struct:worktime::__anon2
+month	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int month=0;        \/\/ to indicate date invalid$/;"	m	struct:worktime::__anon3
+month	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int month=0;        \/\/ to indicate date invalid$/;"	m	class:Tempus
+my_class	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    class my_class   \/\/ regular class definition,$/;"	c	namespace:N
+name	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	string name,address;$/;"	m	class:Detail	file:
+name	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        string name;$/;"	m	class:institute	file:
+name	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        string name;$/;"	m	class:institute
+name	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        std::string name;$/;"	m	class:Human
+name	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        string name;$/;"	m	class:Institute
+nat	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    char nat[5]={'\\0','m','p','h','d'};$/;"	m	class:Employee	file:
+nature	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    const std::string nature[5]={"\\0","full time ", "part time ", "temp_hr ","temp_day "} ;$/;"	m	class:Employee	file:
+operator ()	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^    int operator()(int i) {$/;"	f	struct:X
+other_class	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        friend class other_class;$/;"	x
+paid_amount	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        float paid_amount; \/\/ not implemented$/;"	m	class:Student	file:
+paid_amount	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        float paid_amount; \/\/ not implemented$/;"	m	class:Student	file:
+paid_amount	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        float paid_amount; \/\/ not implemented$/;"	m	class:Student	file:
+paid_till_month	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        int  paid_till_month; \/\/not implemented$/;"	m	class:Student	file:
+paid_till_month	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        int  paid_till_month; \/\/not implemented$/;"	m	class:Student	file:
+paid_till_month	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        int  paid_till_month; \/\/not implemented$/;"	m	class:Student	file:
+parallel_sum	/home/shr/Desktop/cpract/CPP/project/async.cpp	/^int parallel_sum(RandomIt beg, RandomIt end)$/;"	f
+pay	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	float pay,due;$/;"	m	class:Fee	file:
+period	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int period;        $/;"	m	union:worktime::__anon1
+phone	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	string phone;$/;"	m	class:Detail	file:
+polar	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^struct polar$/;"	s
+polar::angle	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^    double angle;$/;"	m	struct:polar
+polar::distance	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^    double distance;$/;"	m	struct:polar
+presence	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        bool presence;$/;"	m	class:Student	file:
+presence	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        bool presence;$/;"	m	class:Student	file:
+presence	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        bool presence;$/;"	m	class:Student	file:
+print_to_log	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    void print_to_log();$/;"	p	namespace:N
+purple	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    enum class colors : short { red, blue, purple, azure };$/;"	m	class:N::colors
+put_value	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        inline void put_value(int i) { vals.push_back(i); } \/\/ inline OK$/;"	f	class:N::my_class
+recorded_m	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    int recorded_m=0;$/;"	m	class:Work
+recorded_y	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    int recorded_y=-1; \/\/ year in the record as y=0 is valid argument$/;"	m	class:Work
+rect	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^struct rect$/;"	s
+rect::x	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^    double x;$/;"	m	struct:rect
+rect::y	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^    double y;$/;"	m	struct:rect
+rect_to_polar	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^polar rect_to_polar (rect xypos);$/;"	p
+rect_to_polar	/home/shr/Desktop/cpract/CPP/project/backup/header example/source.cpp	/^polar rect_to_polar (rect xypos)$/;"	f
+red	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    enum class colors : short { red, blue, purple, azure };$/;"	m	class:N::colors
+replaceBlankWith20	/home/shr/Desktop/cpract/CPP/project/backup/str.cpp	/^string replaceBlankWith20(string str) $/;"	f
+returnFloatingPart	/home/shr/Desktop/cpract/CPP/project/backup/str.cpp	/^string returnFloatingPart(string str) $/;"	f
+roll_no	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        int roll_no;$/;"	m	class:Student	file:
+roll_no	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        int roll_no;$/;"	m	class:Student	file:
+roll_no	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        int roll_no;$/;"	m	class:Student	file:
+set_date	/home/shr/Desktop/cpract/CPP/project/tempus_.cpp	/^    void Tempus::set_date(std::string str=""){$/;"	f	class:Tempus
+set_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void set_date(std::string str=""){$/;"	f	class:Tempus
+set_end_date	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^void set_end_date(){$/;"	f	class:worktime
+set_start_date	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^void set_start_date(){$/;"	f	class:worktime
+set_type_	/home/shr/Desktop/cpract/CPP/project/employee.cpp	/^    void set_type_(){$/;"	f	class:Employee
+set_work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^void set_work_nature(char ch){work_nature=ch;}$/;"	f	class:Work
+show_data	/home/shr/Desktop/cpract/CPP/project/backup/institute_name.complete.cpp	/^        void show_data ( )    {$/;"	f	class:institute
+show_data	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.cpp	/^void institute::show_data ( ) {$/;"	f	class:institute
+show_data	/home/shr/Desktop/cpract/CPP/project/done/institute/institute.h	/^        void show_data            ( ) ;$/;"	p	class:institute
+show_data	/home/shr/Desktop/cpract/CPP/project/faculty_.cpp	/^void institute::show_data ( ) {$/;"	f	class:institute
+show_data	/home/shr/Desktop/cpract/CPP/project/faculty_.h	/^        void show_data            ( ) ;$/;"	p	class:Faculty
+show_data	/home/shr/Desktop/cpract/CPP/project/human_.cpp	/^void Human::show_data ( ) {$/;"	f	class:Human
+show_data	/home/shr/Desktop/cpract/CPP/project/human_.h	/^        void show_data            ( ) ;$/;"	p	class:Human
+show_data	/home/shr/Desktop/cpract/CPP/project/institute_.cpp	/^void Institute::show_data ( ) {$/;"	f	class:Institute
+show_data	/home/shr/Desktop/cpract/CPP/project/institute_.h	/^        void show_data            ( ) ;$/;"	p	class:Institute
+show_date	/home/shr/Desktop/cpract/CPP/project/tempus_.cpp	/^    void Tempus::show_date(std::string str=""){  \/\/ argument to print the passed header of the date;$/;"	f	class:Tempus
+show_date	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^    void show_date(std::string str=""){  \/\/ argument to print the passed header of the date;$/;"	f	class:Tempus
+show_polar	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^void show_polar(polar dapos);$/;"	p
+show_polar	/home/shr/Desktop/cpract/CPP/project/backup/header example/source.cpp	/^void show_polar (polar dapos)$/;"	f
+start	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    }start, current, end;$/;"	m	class:worktime	typeref:struct:worktime::__anon3
+start	/home/shr/Desktop/cpract/CPP/project/work_.h	/^Tempus start, end, current;  \/\/put current and temp in the global universal accessible structure$/;"	m	class:Work
+std_name	/home/shr/Desktop/cpract/CPP/project/backup/input_0.cpp	/^        string std_name;$/;"	m	class:Student	file:
+std_name	/home/shr/Desktop/cpract/CPP/project/backup/input_output.0.cpp	/^        string std_name;$/;"	m	class:Student	file:
+std_name	/home/shr/Desktop/cpract/CPP/project/backup/student.0.0.0.cpp	/^        string std_name;$/;"	m	class:Student	file:
+td	/home/shr/Desktop/cpract/CPP/project/Nepali_date_java.js	/^var td,year,month,day;$/;"	v
+total_pay	/home/shr/Desktop/cpract/CPP/project/backup/Nabin.cpp	/^	float total_pay;$/;"	m	class:Fee	file:
+total_work_duration	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    int total_work_duration;$/;"	m	class:worktime
+vals	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        std::vector<T> vals;$/;"	m	class:N::value_store
+vals	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        vstr vals;$/;"	m	class:N::my_class
+value_store	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        value_store<T>() = default;$/;"	p	class:N::value_store
+value_store	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    class value_store$/;"	c	namespace:N
+value_widget	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^    class value_widget;$/;"	x
+week_day	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^int week_day( int y, int m, int d){  \/\/ no other function other than this need to access this function$/;"	f	class:worktime
+week_day	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int week_day( int y, int m, int d){ \/\/ possible bug on irrelevant pass of data$/;"	f	class:Tempus
+week_day_name	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        const std::string week_day_name[7] = {"sunday","monday","tuesday","wednesday","thursday","friday","saturday"};$/;"	m	class:Tempus
+weekday	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int weekday; \/\/ 0 = sun 6 = sat$/;"	m	struct:worktime::__anon3
+weekday	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int weekday; \/\/ 0 = sun 6 = sat$/;"	m	class:Tempus
+work_duration	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    }work_duration;$/;"	m	class:worktime	typeref:union:worktime::__anon1
+work_nature	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    char work_nature;     \/\/d=week_day h=hr  p=period  m=monthly$/;"	m	class:Work
+work_rec	/home/shr/Desktop/cpract/CPP/project/work_.h	/^    std::vector<std::vector<int> > work_rec; \/\/ for storing the work info for each month in int array [y][m]$/;"	m	class:Work
+worktime	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^class worktime{                 \/\/ strictly public inheritance $/;"	c
+worktime::__anon1::day	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int day;$/;"	m	union:worktime::__anon1
+worktime::__anon1::hr	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int hr; $/;"	m	union:worktime::__anon1
+worktime::__anon1::period	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int period;        $/;"	m	union:worktime::__anon1
+worktime::__anon2::day	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int day;$/;"	m	struct:worktime::__anon2
+worktime::__anon2::month	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int month;$/;"	m	struct:worktime::__anon2
+worktime::__anon2::year	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int year;$/;"	m	struct:worktime::__anon2
+worktime::__anon3::day	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int day=0;$/;"	m	struct:worktime::__anon3
+worktime::__anon3::month	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int month=0;        \/\/ to indicate date invalid$/;"	m	struct:worktime::__anon3
+worktime::__anon3::weekday	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int weekday; \/\/ 0 = sun 6 = sat$/;"	m	struct:worktime::__anon3
+worktime::__anon3::year	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int year=0;$/;"	m	struct:worktime::__anon3
+worktime::current	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    }start, current, end;$/;"	m	class:worktime	typeref:struct:worktime::__anon3
+worktime::current_date	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^void current_date(){$/;"	f	class:worktime
+worktime::days_in_month	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^int days_in_month(int y, int m){$/;"	f	class:worktime
+worktime::end	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    }start, current, end;$/;"	m	class:worktime	typeref:struct:worktime::__anon3
+worktime::input_work_duratiion	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^void input_work_duratiion(){  \/\/overloading general function$/;"	f	class:worktime
+worktime::set_end_date	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^void set_end_date(){$/;"	f	class:worktime
+worktime::set_start_date	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^void set_start_date(){$/;"	f	class:worktime
+worktime::start	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    }start, current, end;$/;"	m	class:worktime	typeref:struct:worktime::__anon3
+worktime::total_work_duration	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    int total_work_duration;$/;"	m	class:worktime
+worktime::week_day	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^int week_day( int y, int m, int d){  \/\/ no other function other than this need to access this function$/;"	f	class:worktime
+worktime::work_duration	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    }work_duration;$/;"	m	class:worktime	typeref:union:worktime::__anon1
+worktime::x	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    char x;     \/\/d=week_day$/;"	m	class:worktime
+write_value	/home/shr/Desktop/cpract/CPP/project/backup/sample.h	/^        void write_value(T val)$/;"	f	class:N::value_store
+x	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^    double x;$/;"	m	struct:rect
+x	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^    char x;     \/\/d=week_day$/;"	m	class:worktime
+y	/home/shr/Desktop/cpract/CPP/project/backup/header example/header.h	/^    double y;$/;"	m	struct:rect
+year	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int year;$/;"	m	struct:worktime::__anon2
+year	/home/shr/Desktop/cpract/CPP/project/backup/worktime_.h	/^        int year=0;$/;"	m	struct:worktime::__anon3
+year	/home/shr/Desktop/cpract/CPP/project/tempus_.h	/^        int year=0;$/;"	m	class:Tempus

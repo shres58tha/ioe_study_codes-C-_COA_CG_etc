@@ -1,0 +1,4 @@
+ 
+gcc  -std=c99 -Wall -W -Wextra -pedantic PIE_obfuscated.c ; ./a.out >PIE_obfuscated_.c
+gcc  -std=c99 -Wall -W -Wextra -pedantic PIE_obfuscated_.c ; ./a.out 3.14.c
+gcc  -std=c99 -Wall -W -Wextra -pedantic 3.14.c ; ./a.out >3.14.c
